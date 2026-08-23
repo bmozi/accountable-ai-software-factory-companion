@@ -23,7 +23,8 @@ consequence ownership. Every child receives explicit scope, authority, budget,
 lineage, cancellation behavior, result schema, and an integrating owner.
 
 **Evidence available:** implementation history and architectural decision
-records show the change in direction.  
+records show the change in direction.
+
 **Not available:** a controlled comparison proving one topology universally
 faster, safer, or cheaper.
 
@@ -59,7 +60,8 @@ of the admitted semantic boundary, not merely process liveness.
    replacement.
 
 **Evidence available:** Git history, the produced change, follow-up Work Order
-records, and later repair commits.  
+records, and later repair commits.
+
 **Not available:** the complete modern receipt, original database snapshot,
 attempt-scoped cost, approval ledger, population denominator, or independently
 measured business outcome. Those fields remain `not_available`.
