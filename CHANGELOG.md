@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0 — 2026-08-22
+
+- Published the memory-governance workbook promised by Chapter 6.
+- Published the provider, tenant, quota, and capacity design promised by
+  Chapter 8.
+- Published the comparative factory pilot protocol promised by Chapter 15.
+- Synchronized the curriculum map and reader paths with the manuscript.
+- Added stable `companion/...` paths matching the published Book 3 while
+  preserving existing `templates/...` links.
+- Removed internal working-draft labels from reader-facing templates.
+- Added automated validation of the runnable reference factory, published
+  paths, and local Markdown links.
+
 ## 0.2.0 — 2026-08-22
 
 - Established the book as the curriculum and the repository as its laboratory.

@@ -1,6 +1,5 @@
 # Decision Rights and Authority Matrix
 
-Version: working draft 0.1
 Primary chapters: 3, 11, and 13
 
 Use one row per consequential decision. Roles may repeat, but decisions must not

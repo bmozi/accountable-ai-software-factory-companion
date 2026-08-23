@@ -1,6 +1,5 @@
 # Factory Outcome and Countermetric Scorecard
 
-Version: working draft 0.1
 Primary chapter: 15
 
 ## Outcome contract

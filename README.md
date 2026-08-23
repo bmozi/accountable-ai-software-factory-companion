@@ -36,7 +36,8 @@ chapter-to-artifact curriculum.
 | Path | Reader value |
 |---|---|
 | [`reference-factory/`](reference-factory/) | Vendor-neutral domain contracts, authority and evidence boundaries, recovery protocol, canonical fictional trace, twenty-four acceptance obligations, and runnable teaching code. |
-| [`templates/`](templates/) | Factory charter, Work Order, risk-to-evidence, decision-rights, human-judgment, maturity, outcome, operations, threat-model, improvement, architecture-choice, and ninety-day pilot instruments. |
+| [`companion/`](companion/) | Stable artifact paths named by the published Book 3. |
+| [`templates/`](templates/) | Fifteen instruments covering factory charter, Work Orders, memory governance, capacity and tenant fairness, risk-to-evidence, decision rights, human judgment, maturity, outcomes, operations, threat modeling, comparative pilots, improvement, architecture choice, and the first ninety days. |
 | [`MERLIN-PUBLIC-LESSONS.md`](MERLIN-PUBLIC-LESSONS.md) | Sanitized first-party failure lessons, evidence limits, and the responsibility-level architecture they changed. |
 | [`PUBLIC-IMPLEMENTATIONS-TO-STUDY.md`](PUBLIC-IMPLEMENTATIONS-TO-STUDY.md) | A responsibility-by-responsibility map of public agent and software-factory projects. |
 | [`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md) | The required reading, laboratory artifact, and proof-of-learning relationship for Chapters 3–18. |

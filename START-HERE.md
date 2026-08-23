@@ -49,13 +49,17 @@ do not connect the workflow to production.
 - **Builder:** complete the twenty-four obligations in
   [`05-acceptance-test-suite.md`](reference-factory/05-acceptance-test-suite.md).
 - **Architect:** use
-  [`factory-architecture-decision-guide.md`](templates/factory-architecture-decision-guide.md).
+  [`factory-architecture-decision-guide.md`](templates/factory-architecture-decision-guide.md)
+  and [`provider-tenant-capacity-design.md`](templates/provider-tenant-capacity-design.md).
 - **Security reviewer:** use
   [`factory-threat-model.md`](templates/factory-threat-model.md).
 - **Engineering leader:** use
-  [`ninety-day-pilot-workbook.md`](templates/ninety-day-pilot-workbook.md).
+  [`ninety-day-pilot-workbook.md`](templates/ninety-day-pilot-workbook.md)
+  and [`comparative-pilot-protocol.md`](templates/comparative-pilot-protocol.md).
 - **Executive sponsor:** use
   [`factory-outcome-scorecard.md`](templates/factory-outcome-scorecard.md).
+- **Learning-system owner:** use
+  [`memory-governance-workbook.md`](templates/memory-governance-workbook.md).
 
 ## Completion standard
 

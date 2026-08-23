@@ -1,6 +1,5 @@
 # Factory Operations Handbook
 
-**Version:** 0.1 working draft
 **Relationship:** Chapters 12, 14, 17, and 18
 
 ## Service definition

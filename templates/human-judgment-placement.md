@@ -1,6 +1,5 @@
 # Human Judgment Placement Worksheet
 
-Version: working draft 0.1
 Primary chapter: 13
 
 ## Decision inventory

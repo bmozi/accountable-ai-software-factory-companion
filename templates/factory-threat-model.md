@@ -1,6 +1,5 @@
 # Accountable Factory Threat-Model Workbook
 
-**Version:** 0.1 working draft
 **Relationship:** Chapters 7, 10–12, and 17
 
 ## Purpose

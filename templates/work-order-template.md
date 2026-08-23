@@ -1,6 +1,5 @@
 # Accountable Work Order
 
-Version: working draft 0.1
 Primary chapters: 4, 5, and 12
 
 ## Identity and purpose

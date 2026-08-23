@@ -1,6 +1,5 @@
 # Factory Architecture Decision Guide
 
-**Version:** 0.1 working draft
 **Relationship:** Chapters 3, 5–11, and 13–18
 
 ## Purpose

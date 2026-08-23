@@ -1,6 +1,5 @@
 # Factory Capability and Maturity Assessment
 
-Version: working draft 0.1
 Primary chapters: 2 and 18
 
 Use this assessment to identify the weakest responsibility that could invalidate
