@@ -5,8 +5,8 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "schemaVersion", "kind", "id", "version", "promise", "beneficiary",
-    "owner", "consequenceOwner", "producerId", "criteria", "prohibitions",
+    "schemaVersion", "kind", "id", "version", "workClass", "promise", "beneficiary",
+    "owner", "consequenceOwner", "producerId", "releaseOwner", "learningOwner", "criteria", "prohibitions",
     "authority", "budgets", "evidenceFloor", "recovery", "outcome"
   ],
   "properties": {
@@ -14,11 +14,14 @@
     "kind": {"const": "WorkOrder"},
     "id": {"type": "string", "minLength": 1},
     "version": {"type": "integer", "minimum": 1},
+    "workClass": {"type": "string", "minLength": 1},
     "promise": {"type": "string", "minLength": 1},
     "beneficiary": {"type": "string", "minLength": 1},
     "owner": {"type": "string", "minLength": 1},
     "consequenceOwner": {"type": "string", "minLength": 1},
     "producerId": {"type": "string", "minLength": 1},
+    "releaseOwner": {"type": "string", "minLength": 1},
+    "learningOwner": {"type": "string", "minLength": 1},
     "criteria": {
       "type": "array", "minItems": 1, "uniqueItems": true,
       "items": {

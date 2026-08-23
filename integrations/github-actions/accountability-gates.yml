@@ -1,0 +1,19 @@
+# © 2026 John Briggs — MIT licensed; see ../../LICENSE-CODE.
+name: Accountable factory gates
+on: [pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  accountability-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate canonical artifacts
+        run: PYTHONPATH=. python tools/validate_artifact.py examples/artifacts/*.valid.json
+      - name: Prove all twenty-four failure obligations
+        run: PYTHONPATH=. python -m unittest discover -s reference-factory/example -p 'test_*.py'
+      - name: Prove the complete vertical slice
+        run: PYTHONPATH=. python -m accountable_factory.cli journey

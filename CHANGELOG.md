@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.0 — 2026-08-23
+
+- Replaced the split schema/validator/example models with one canonical domain,
+  policy, persistence, CLI, and state machine.
+- Automated all twenty-four published acceptance obligations one-for-one.
+- Added enforceable ownership, authority revocation, budget conservation,
+  durable leases, append-only evidence, disposition gates, semantic operation
+  identity, reconcile-before-retry, receipts, outcomes, and governed learning.
+- Added a complete offline Work Order-to-outcome journey with a real local Git
+  effect and simulated lost response, plus container and GitHub Actions entry
+  points.
+- Added an honest comparative-pilot recorder and an explicit gap-closure map
+  against useful public implementations.
+
 ## 1.0.0 — 2026-08-22
 
 - Added an outcome-based index, role-specific learning routes, and an applied

@@ -3,11 +3,14 @@
   "kind": "WorkOrder",
   "id": "WO-MERIDIAN-0042",
   "version": 3,
+  "workClass": "advisory-reconciliation",
   "promise": "Show a specialist the source conflict and a supported advisory recommendation",
   "beneficiary": "Payment-reconciliation specialist",
   "owner": "elena-product",
   "consequenceOwner": "rina-operations",
   "producerId": "factory-producer-01",
+  "releaseOwner": "jon-release",
+  "learningOwner": "maya-factory-product",
   "criteria": [
     {"id": "explanation-fidelity", "claim": "The interface reveals every material source conflict"},
     {"id": "prohibited-write", "claim": "No source or payment record is changed"}

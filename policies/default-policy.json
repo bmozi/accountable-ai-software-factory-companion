@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Book 3 teaching policy",
+  "workClasses": {
+    "advisory-reconciliation": {
+      "allowedModes": ["read-only", "advisory"],
+      "allowedEnvironments": ["isolated-development"],
+      "maxDelegation": 1,
+      "maxCostUnits": 25,
+      "requiredProhibitions": [
+        "No source mutation",
+        "No automated payment match",
+        "No customer communication"
+      ]
+    },
+    "repository-maintenance": {
+      "allowedModes": ["read-only", "draft-only", "bounded-write"],
+      "allowedEnvironments": ["isolated-development", "ephemeral-worktree"],
+      "maxDelegation": 2,
+      "maxCostUnits": 50,
+      "requiredProhibitions": ["No autonomous production release"]
+    }
+  }
+}

@@ -35,16 +35,20 @@ TOP_LEVEL = (
     "START-HERE.md",
 )
 DIRECTORIES = (
+    "accountable_factory",
     "assessment",
+    "benchmarks",
     "companion",
     "decisions",
     "diagrams",
     "examples",
     "exercises",
     "implementation",
+    "integrations",
     "learning-paths",
     "leadership",
     "merlin",
+    "policies",
     "reference-factory",
     "release-assets",
     "schemas",
@@ -81,7 +85,7 @@ def digest(path: Path) -> str:
 
 
 def write_zip(path: Path, prefix: str, files: list[Path], manifest: bytes) -> None:
-    timestamp = (2026, 8, 22, 0, 0, 0)
+    timestamp = (2026, 8, 23, 0, 0, 0)
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for source in files:
             relative = source.relative_to(ROOT).as_posix()

@@ -16,7 +16,7 @@
     "workOrderId": {"type": "string", "minLength": 1},
     "intentVersion": {"type": "integer", "minimum": 1},
     "candidateDigest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
-    "authorityUsed": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "authorityUsed": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_-]*:.+$"}},
     "evidenceRecordIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
     "disposition": {
       "type": "object", "additionalProperties": false,

@@ -36,3 +36,22 @@ work class and record, for each candidate architecture:
 The result may be buy, assemble, build, narrow, or stop. The purpose is not to
 prove this companion superior. It is to prevent useful machinery from being
 mistaken for a complete accountability system.
+
+## Gaps this companion now makes executable
+
+The projects above are often deeper at agent runtime, sandboxing, workflow UX,
+or fleet operations. This companion is intentionally deeper across the complete
+responsibility chain. Version 1.1 makes its differentiators falsifiable:
+
+| Responsibility gap | Executable proof here |
+|---|---|
+| One canonical intent contract | Schema, validator, CLI, persistence, examples, and tests import the same domain model |
+| Authority outside model persuasion | Policy admission, capability denial, revocation, actor attribution, and release-owner checks |
+| Evidence cannot float to a newer candidate | Candidate digest and Work Order identity form the evidence foreign key; replacement candidates have no inherited verdict |
+| Uncertain side effects do not become blind retries | Durable semantic operation identity plus a real local Git effect, simulated lost response, observation, and reconciliation |
+| Completion extends beyond merge | Human disposition, Factory Receipt, outcome/countermetric observation, and rollback path |
+| Learning cannot silently rewrite control | Candidate/validated/retired learning states, scoped influence, evidence, expiry, independent owner, and protected-policy refusal |
+| Claims can be checked rather than admired | Twenty-four one-for-one acceptance tests and a comparison recorder that rejects missing measurements |
+
+This is differentiation by responsibility coverage, not a claim that the
+teaching implementation is production-ready or superior on every component.

@@ -1,6 +1,6 @@
 # Build the Reference Accountable Factory
 
-**Version:** 0.2
+**Version:** 1.1
 **Relationship:** implementation companion to Chapters 3–18
 **Boundary:** vendor-neutral teaching contracts; not production code and not a
 description of any private factory
@@ -18,11 +18,11 @@ From the repository root:
 ./reference-factory/run-reader-journey.sh
 ```
 
-The command runs the failure-oriented tests and walks the fictional Meridian
-Ledger case through exploration, admission, bounded execution, evaluator-
-independence refusal, conflicting evidence, human disposition, indeterminate
-release, restart reconciliation, provider substitution, mixed outcome,
-narrowed authority, rejected learning, and prototype retirement.
+The command proves all twenty-four published failure obligations and walks the
+fictional Meridian Ledger case through admission, bounded execution,
+independent evidence, human disposition, a deliberately lost release response,
+effect reconciliation, a canonical receipt, outcome observation, and governed
+learning. It creates exactly one effect in a temporary local Git repository.
 
 > Read the architecture. Run the failure. Change the contract. Build your first
 > bounded factory.
@@ -58,9 +58,25 @@ By the end, the implementation can:
 6. Add delegation or governed improvement only after the single-owner loop
    passes every applicable test.
 
-The `example/` directory contains a small standard-library Python teaching core
-with executable tests. It demonstrates selected invariants; it is a scaffold,
-not a production starter kit.
+The canonical standard-library implementation lives in
+[`accountable_factory/`](../accountable_factory/). The `example/` directory is
+the executable curriculum: a compatibility import, the complete journey, and
+one named test for every obligation. Schemas, CLI, validator, examples, and
+tests all consume the same model.
+
+Inspect the CLI:
+
+```bash
+PYTHONPATH=. python3 -m accountable_factory.cli journey
+PYTHONPATH=. python3 -m accountable_factory.cli validate examples/artifacts/work-order.valid.json
+```
+
+Or run the journey in a disposable container:
+
+```bash
+docker build -f reference-factory/Dockerfile -t accountable-factory-reader .
+docker run --rm accountable-factory-reader
+```
 
 ## Deliberate omissions
 

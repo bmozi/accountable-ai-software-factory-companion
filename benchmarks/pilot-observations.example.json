@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0",
+  "pilot": "replace-with-pre-registered-pilot-id",
+  "arms": [
+    {"name": "current-process", "completedWorkOrders": null, "medianCycleMinutes": null, "humanMinutes": null, "costUnits": null, "escapedDefects": null, "outcomeSuccesses": null},
+    {"name": "accountable-factory", "completedWorkOrders": null, "medianCycleMinutes": null, "humanMinutes": null, "costUnits": null, "escapedDefects": null, "outcomeSuccesses": null}
+  ]
+}

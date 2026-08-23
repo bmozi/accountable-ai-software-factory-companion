@@ -27,10 +27,10 @@ cd accountable-ai-software-factory-companion
 ./reference-factory/run-reader-journey.sh
 ```
 
-The standard-library Python teaching core exercises incomplete intent, stale
-state, producer self-approval, artifact-bound evidence, evaluator conflict,
-duplicate operation identity, lost-response reconciliation, and durable
-decision history. It uses SQLite and requires no model provider or API key.
+The standard-library Python teaching core executes all twenty-four published
+failure obligations plus one complete Work Order-to-outcome journey. It uses
+SQLite and a temporary local Git effect, and requires no model provider or API
+key.
 
 Read [`START-HERE.md`](START-HERE.md) for the first laboratory path and
 [`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md) for the complete
@@ -46,6 +46,9 @@ who do not use Git can download the versioned bundle from the
 | [`INDEX.md`](INDEX.md) | Outcome-based map of the complete premium companion. |
 | [`implementation/`](implementation/) | End-to-end minimum viable accountable factory construction guide. |
 | [`reference-factory/`](reference-factory/) | Vendor-neutral domain contracts, authority and evidence boundaries, recovery protocol, canonical fictional trace, twenty-four acceptance obligations, and runnable teaching code. |
+| [`accountable_factory/`](accountable_factory/) and [`policies/`](policies/) | One canonical implementation and explicit admission/authority policy shared by the CLI, validator, examples, and tests. |
+| [`integrations/`](integrations/) | Copyable GitHub Actions gates and deployment boundaries. |
+| [`benchmarks/`](benchmarks/) | A comparative-pilot recorder that refuses to rank missing or invented observations. |
 | [`schemas/`](schemas/) and [`tools/`](tools/) | Machine-readable Work Order, evidence, receipt, and outcome contracts with a dependency-free validator. |
 | [`examples/`](examples/) | Complete Meridian Ledger decision trace and valid or deliberately invalid records. |
 | [`exercises/`](exercises/) | Twelve failure-injection drills with explicit safe-pass conditions. |
@@ -100,8 +103,9 @@ has organizational consequence:
 
 ## License
 
-Executable Python and shell code under `reference-factory/example/`,
-`reference-factory/run-reader-journey.sh`, `scripts/`, and `tools/` is MIT licensed.
+Executable Python and shell code under `accountable_factory/`, `benchmarks/`,
+`reference-factory/example/`, `reference-factory/run-reader-journey.sh`,
+`scripts/`, and `tools/` is MIT licensed.
 Written content, templates, schemas, contracts, exercises, and explanatory
 material are CC BY-NC-SA 4.0.
 See [`LICENSE`](LICENSE), [`LICENSE-CODE`](LICENSE-CODE), and

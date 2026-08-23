@@ -14,7 +14,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 PUBLISHED_PATHS = (
     "companion/factory-charter-template.md",
     "companion/memory-governance-workbook.md",
@@ -26,6 +26,13 @@ PUBLISHED_PATHS = (
 )
 LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 EXECUTABLE_SOURCES = (
+    "accountable_factory/__init__.py",
+    "accountable_factory/adapters.py",
+    "accountable_factory/cli.py",
+    "accountable_factory/contracts.py",
+    "accountable_factory/factory.py",
+    "accountable_factory/policy.py",
+    "benchmarks/compare_pilot.py",
     "reference-factory/example/reference_factory.py",
     "reference-factory/example/run_reader_journey.py",
     "reference-factory/example/test_reference_factory.py",
@@ -49,15 +56,19 @@ REQUIRED_PUBLIC_FILES = (
 PREMIUM_PATHS = (
     "INDEX.md",
     "assessment/accountable-factory-diagnostic.md",
+    "benchmarks/pilot-observations.example.json",
     "decisions/architecture-decision-starters.md",
     "diagrams/accountable-factory-visual-guide.md",
     "examples/meridian-ledger-complete-trace.md",
     "exercises/failure-laboratory.md",
     "implementation/minimum-viable-accountable-factory.md",
+    "integrations/github-actions/accountability-gates.yml",
     "learning-paths/README.md",
     "leadership/ai-native-build-versus-buy-calculator.md",
     "leadership/enterprise-agent-role-and-decision-rights-map.md",
     "merlin/sanitized-pattern-cards.md",
+    "policies/default-policy.json",
+    "reference-factory/Dockerfile",
     "release-assets/README.md",
     "schemas/work-order.schema.json",
     "schemas/evidence-record.schema.json",
@@ -160,6 +171,24 @@ def main() -> int:
         errors.append(
             f"examples/artifacts contains {valid_example_count} valid records; expected 4"
         )
+
+    acceptance_source = (ROOT / "reference-factory/example/test_reference_factory.py").read_text(encoding="utf-8")
+    acceptance_ids = re.findall(r"def test_(a\d{2})_", acceptance_source)
+    expected_ids = [f"a{number:02d}" for number in range(1, 25)]
+    if acceptance_ids != expected_ids:
+        errors.append(f"executable acceptance coverage is {acceptance_ids}; expected {expected_ids}")
+
+    canonical_import = (ROOT / "tools/validate_artifact.py").read_text(encoding="utf-8")
+    if "from accountable_factory.contracts import validate_artifact" not in canonical_import:
+        errors.append("artifact validator does not consume the canonical contract")
+
+    compatibility_source = (ROOT / "reference-factory/example/reference_factory.py").read_text(encoding="utf-8")
+    if "class Factory" in compatibility_source or "intent_json" in compatibility_source:
+        errors.append("retired split factory model returned under reference-factory/example")
+    work_order_schema = (ROOT / "schemas/work-order.schema.json").read_text(encoding="utf-8")
+    for canonical_role in ("workClass", "releaseOwner", "learningOwner"):
+        if canonical_role not in work_order_schema:
+            errors.append(f"Work Order schema lacks canonical role: {canonical_role}")
 
     if errors:
         print("\n".join(errors), file=sys.stderr)

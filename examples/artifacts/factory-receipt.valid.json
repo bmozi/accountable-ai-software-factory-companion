@@ -5,7 +5,7 @@
   "workOrderId": "WO-MERIDIAN-0042",
   "intentVersion": 3,
   "candidateDigest": "sha256:8e63b0d22d72fb515299fb5bdceaf07b4f1b334d59e84c9f7e8ab14b364e52da",
-  "authorityUsed": ["repository-read", "isolated-test", "isolated-workspace-write"],
+  "authorityUsed": ["tools:repository-read", "tools:isolated-test", "writes:isolated-workspace"],
   "evidenceRecordIds": ["EV-MERIDIAN-0091", "EV-MERIDIAN-0092"],
   "disposition": {
     "actorId": "rina-operations",
