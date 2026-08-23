@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bmozi/accountable-ai-software-factory-companion/schemas/outcome-observation.schema.json",
+  "title": "Factory Outcome Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "kind", "id", "receiptId", "observedAt", "window",
+    "primaryMeasure", "countermetrics", "denominator", "limitations",
+    "disposition", "decisionOwner"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "kind": {"const": "OutcomeObservation"},
+    "id": {"type": "string", "minLength": 1},
+    "receiptId": {"type": "string", "minLength": 1},
+    "observedAt": {"type": "string", "format": "date-time"},
+    "window": {"type": "string", "minLength": 1},
+    "primaryMeasure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "value", "baseline"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "value": {"type": ["number", "string"]},
+        "baseline": {"type": ["number", "string"]}
+      }
+    },
+    "countermetrics": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "denominator": {"type": "integer", "minimum": 1},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "disposition": {"enum": ["effective", "ineffective", "insufficient", "harmful", "not-yet-due"]},
+    "decisionOwner": {"type": "string", "minLength": 1}
+  }
+}

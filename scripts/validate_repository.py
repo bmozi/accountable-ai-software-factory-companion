@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Validate the public companion's published paths and local Markdown links."""
+"""Validate the public companion's publication and curriculum contracts.
+
+© 2026 John Briggs — MIT licensed; see ../LICENSE-CODE.
+"""
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -10,7 +14,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.3.1"
+VERSION = "1.0.0"
 PUBLISHED_PATHS = (
     "companion/factory-charter-template.md",
     "companion/memory-governance-workbook.md",
@@ -26,6 +30,10 @@ EXECUTABLE_SOURCES = (
     "reference-factory/example/run_reader_journey.py",
     "reference-factory/example/test_reference_factory.py",
     "reference-factory/run-reader-journey.sh",
+    "scripts/build_reader_bundle.py",
+    "scripts/validate_repository.py",
+    "tools/validate_artifact.py",
+    "tools/test_validate_artifact.py",
 )
 REQUIRED_PUBLIC_FILES = (
     "COMMERCIAL-USE.md",
@@ -37,6 +45,30 @@ REQUIRED_PUBLIC_FILES = (
     ".github/ISSUE_TEMPLATE/errata.yml",
     ".github/ISSUE_TEMPLATE/broken-resource.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
+)
+PREMIUM_PATHS = (
+    "INDEX.md",
+    "assessment/accountable-factory-diagnostic.md",
+    "decisions/architecture-decision-starters.md",
+    "diagrams/accountable-factory-visual-guide.md",
+    "examples/meridian-ledger-complete-trace.md",
+    "exercises/failure-laboratory.md",
+    "implementation/minimum-viable-accountable-factory.md",
+    "learning-paths/README.md",
+    "leadership/ai-native-build-versus-buy-calculator.md",
+    "leadership/enterprise-agent-role-and-decision-rights-map.md",
+    "merlin/sanitized-pattern-cards.md",
+    "release-assets/README.md",
+    "schemas/work-order.schema.json",
+    "schemas/evidence-record.schema.json",
+    "schemas/factory-receipt.schema.json",
+    "schemas/outcome-observation.schema.json",
+    "study-guides/chapter-workbook.md",
+    "study-guides/chapters/README.md",
+    "templates/factory-balance-sheet.md",
+    "tools/validate_artifact.py",
+    "tools/test_validate_artifact.py",
+    "workforce/ai-practice-and-guardrail-guide.md",
 )
 
 
@@ -51,7 +83,7 @@ def local_target(source: Path, raw_target: str) -> Path | None:
 def main() -> int:
     errors: list[str] = []
 
-    for relative in (*PUBLISHED_PATHS, *REQUIRED_PUBLIC_FILES):
+    for relative in (*PUBLISHED_PATHS, *REQUIRED_PUBLIC_FILES, *PREMIUM_PATHS):
         if not (ROOT / relative).is_file():
             errors.append(f"missing required public path: {relative}")
 
@@ -91,13 +123,52 @@ def main() -> int:
                     f"reader-facing production language in {source.relative_to(ROOT)}: {phrase}"
                 )
 
+    for source in ROOT.rglob("*.json"):
+        if ".git" in source.parts or "dist" in source.parts:
+            continue
+        try:
+            json.loads(source.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            errors.append(f"invalid JSON: {source.relative_to(ROOT)}: {exc}")
+
+    promised_counts = (
+        ("study-guides/chapter-workbook.md", "## Chapter ", 18, "chapters"),
+        ("exercises/failure-laboratory.md", "## Drill ", 12, "failure drills"),
+        ("diagrams/accountable-factory-visual-guide.md", "```mermaid", 5, "diagrams"),
+        ("merlin/sanitized-pattern-cards.md", "## Card ", 9, "Merlin pattern cards"),
+    )
+    for relative, marker, expected, label in promised_counts:
+        actual = (ROOT / relative).read_text(encoding="utf-8").count(marker)
+        if actual != expected:
+            errors.append(f"{relative} contains {actual} {label}; expected {expected}")
+
+    template_count = len(list((ROOT / "templates").glob("*.md")))
+    if template_count != 18:
+        errors.append(f"templates contains {template_count} instruments; expected 18")
+    chapter_guide_count = len(
+        list((ROOT / "study-guides" / "chapters").glob("learning-guide-ch*.md"))
+    )
+    if chapter_guide_count != 18:
+        errors.append(
+            f"study-guides/chapters contains {chapter_guide_count} guides; expected 18"
+        )
+    schema_count = len(list((ROOT / "schemas").glob("*.schema.json")))
+    if schema_count != 4:
+        errors.append(f"schemas contains {schema_count} contracts; expected 4")
+    valid_example_count = len(list((ROOT / "examples" / "artifacts").glob("*.valid.json")))
+    if valid_example_count != 4:
+        errors.append(
+            f"examples/artifacts contains {valid_example_count} valid records; expected 4"
+        )
+
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
 
     print(
-        f"Validated companion {VERSION}: {len(PUBLISHED_PATHS)} published paths, "
-        "public governance files, license notices, version pins, and all local links."
+        f"Validated premium companion {VERSION}: {len(PUBLISHED_PATHS)} published "
+        f"paths, {len(PREMIUM_PATHS)} curriculum contracts, public governance, "
+        "licenses, versions, JSON, and all local links."
     )
     return 0
 

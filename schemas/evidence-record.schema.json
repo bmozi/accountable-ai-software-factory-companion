@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bmozi/accountable-ai-software-factory-companion/schemas/evidence-record.schema.json",
+  "title": "Artifact-Bound Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "kind", "id", "workOrderId", "candidateDigest",
+    "criterionId", "producerId", "evaluator", "method", "result",
+    "decisive", "observedAt", "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "kind": {"const": "EvidenceRecord"},
+    "id": {"type": "string", "minLength": 1},
+    "workOrderId": {"type": "string", "minLength": 1},
+    "candidateDigest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "criterionId": {"type": "string", "minLength": 1},
+    "producerId": {"type": "string", "minLength": 1},
+    "evaluator": {
+      "type": "object", "additionalProperties": false,
+      "required": ["actorId", "type", "independence"],
+      "properties": {
+        "actorId": {"type": "string", "minLength": 1},
+        "type": {"enum": ["deterministic", "model", "human", "external-system"]},
+        "independence": {"enum": ["producer-self-check", "separate-context", "separate-method", "independent-owner"]}
+      }
+    },
+    "method": {"type": "string", "minLength": 1},
+    "result": {"enum": ["pass", "fail", "inconclusive", "error"]},
+    "decisive": {"type": "boolean"},
+    "observedAt": {"type": "string", "format": "date-time"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

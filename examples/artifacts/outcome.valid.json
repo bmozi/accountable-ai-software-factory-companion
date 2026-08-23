@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "OutcomeObservation",
+  "id": "OUT-MERIDIAN-0008",
+  "receiptId": "RC-MERIDIAN-0017",
+  "observedAt": "2026-09-05T18:30:00Z",
+  "window": "Fourteen-day five-specialist canary",
+  "primaryMeasure": {
+    "name": "Median time to supported specialist disposition",
+    "value": "11 minutes",
+    "baseline": "16 minutes"
+  },
+  "countermetrics": [
+    {"name": "Review preparation", "value": "higher than baseline"},
+    {"name": "Unsupported screenshot use", "value": 1}
+  ],
+  "denominator": 37,
+  "limitations": [
+    "Fictional instructional data",
+    "Small cohort",
+    "Missing source records remained a confounder"
+  ],
+  "disposition": "insufficient",
+  "decisionOwner": "rina-operations"
+}

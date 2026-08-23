@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "EvidenceRecord",
+  "id": "EV-MERIDIAN-INVALID",
+  "workOrderId": "WO-MERIDIAN-0042",
+  "candidateDigest": "sha256:8e63b0d22d72fb515299fb5bdceaf07b4f1b334d59e84c9f7e8ab14b364e52da",
+  "criterionId": "explanation-fidelity",
+  "producerId": "factory-producer-01",
+  "evaluator": {
+    "actorId": "factory-producer-01",
+    "type": "model",
+    "independence": "producer-self-check"
+  },
+  "method": "Producer reread its own result",
+  "result": "pass",
+  "decisive": true,
+  "observedAt": "2026-08-22T18:00:00Z",
+  "limitations": []
+}

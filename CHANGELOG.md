@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.0 — 2026-08-22
+
+- Added an outcome-based index, role-specific learning routes, and an applied
+  workbook spanning all eighteen chapters.
+- Added eighteen deeper chapter guides with objectives, key terms, review and
+  discussion questions, and three assessed exercises per chapter.
+- Added a complete minimum viable accountable factory construction path, a
+  worked Meridian Ledger decision trace, and twelve failure-injection drills.
+- Added five editable architecture diagrams, a thirty-question responsibility
+  diagnostic, ten architecture-decision starters, and a factory balance sheet.
+- Added AI-native build-versus-buy, enterprise agent decision-rights,
+  exploration-envelope, stakeholder-adoption, and workforce guardrail tools.
+- Published nine sanitized Merlin pattern cards with proof obligations and
+  explicit evidence limits.
+- Added machine-readable Work Order, evidence, receipt, and outcome contracts,
+  valid and deliberately invalid examples, and a dependency-free validator.
+- Added a reproducible versioned reader bundle and expanded automated integrity
+  checks for the premium curriculum.
+
 ## 0.3.1 — 2026-08-22
 
 - Matched the series companion standard with structured errata and broken-link

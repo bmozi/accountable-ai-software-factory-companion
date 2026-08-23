@@ -24,7 +24,17 @@ jobs:
           python-version: "3.12"
       - name: Run unit tests
         run: python -m unittest discover -s reference-factory/example -p 'test_*.py'
+      - name: Run artifact-contract tests
+        run: python -m unittest discover -s tools -p 'test_*.py'
       - name: Run reader journey
         run: ./reference-factory/run-reader-journey.sh
+      - name: Validate example accountability artifacts
+        run: |
+          python tools/validate_artifact.py examples/artifacts/*.valid.json
+          python tools/validate_artifact.py --expect-invalid examples/artifacts/*.invalid-self-approval.json
       - name: Validate published paths and local links
         run: python scripts/validate_repository.py
+      - name: Build and test versioned reader bundle
+        run: |
+          python scripts/build_reader_bundle.py
+          python -m zipfile -t dist/accountable-ai-software-factory-companion-v1.0.0.zip

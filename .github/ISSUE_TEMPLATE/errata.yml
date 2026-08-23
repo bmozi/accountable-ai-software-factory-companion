@@ -22,7 +22,7 @@ body:
     id: version
     attributes:
       label: Edition or companion version
-      placeholder: "Example: first edition / v0.3.1"
+      placeholder: "Example: first edition / v1.0.0"
     validations:
       required: true
   - type: input

@@ -8,8 +8,9 @@ templates/ and the prose, contracts, traces, and acceptance suite under
 reference-factory/,
 and to any other prose, templates, or creative work distributed here,
 EXCEPT for executable Python code under reference-factory/example/ and
-reference-factory/run-reader-journey.sh, which are licensed separately under
-the MIT License (see LICENSE-CODE).
+reference-factory/run-reader-journey.sh and executable Python code under
+scripts/ and tools/, which are licensed separately under the MIT License (see
+LICENSE-CODE).
 
 ================================================================================
 

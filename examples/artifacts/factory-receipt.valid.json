@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "FactoryReceipt",
+  "id": "RC-MERIDIAN-0017",
+  "workOrderId": "WO-MERIDIAN-0042",
+  "intentVersion": 3,
+  "candidateDigest": "sha256:8e63b0d22d72fb515299fb5bdceaf07b4f1b334d59e84c9f7e8ab14b364e52da",
+  "authorityUsed": ["repository-read", "isolated-test", "isolated-workspace-write"],
+  "evidenceRecordIds": ["EV-MERIDIAN-0091", "EV-MERIDIAN-0092"],
+  "disposition": {
+    "actorId": "rina-operations",
+    "decision": "approve",
+    "reason": "Declared evidence floor passed after repair; exposure remains advisory",
+    "expiresAt": null
+  },
+  "operation": {
+    "id": "OP-MERIDIAN-CANARY-001",
+    "state": "reconciled",
+    "reconciliationEvidence": "Provider state confirmed one five-person cohort"
+  },
+  "release": {
+    "actorId": "jon-release",
+    "mode": "canary",
+    "exposure": "Five approved payment specialists",
+    "rollback": "Remove advisory route and preserve decision records"
+  },
+  "recoveryOwner": "jon-release",
+  "createdAt": "2026-08-22T18:30:00Z"
+}

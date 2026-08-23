@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "WorkOrder",
+  "id": "WO-MERIDIAN-0042",
+  "version": 3,
+  "promise": "Show a specialist the source conflict and a supported advisory recommendation",
+  "beneficiary": "Payment-reconciliation specialist",
+  "owner": "elena-product",
+  "consequenceOwner": "rina-operations",
+  "producerId": "factory-producer-01",
+  "criteria": [
+    {"id": "explanation-fidelity", "claim": "The interface reveals every material source conflict"},
+    {"id": "prohibited-write", "claim": "No source or payment record is changed"}
+  ],
+  "prohibitions": [
+    "No source mutation",
+    "No automated payment match",
+    "No customer communication"
+  ],
+  "authority": {
+    "mode": "advisory",
+    "data": ["approved-deidentified-fixtures"],
+    "tools": ["repository-read", "isolated-test"],
+    "writes": ["isolated-workspace"],
+    "environment": "isolated-development",
+    "communication": [],
+    "delegation": 0
+  },
+  "budgets": {
+    "attempts": 1,
+    "repairAttempts": 1,
+    "seconds": 1800,
+    "costUnits": 10
+  },
+  "evidenceFloor": ["explanation-fidelity", "prohibited-write"],
+  "recovery": {
+    "owner": "jon-release",
+    "lostResponse": "reconcile-before-retry"
+  },
+  "outcome": {
+    "primaryMeasure": "time to supported specialist disposition",
+    "countermetrics": ["review preparation time", "unsupported screenshot use"],
+    "windowDays": 14
+  }
+}

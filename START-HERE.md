@@ -46,8 +46,11 @@ do not connect the workflow to production.
 
 ## Next paths
 
+- **Complete implementation path:** follow
+  [`implementation/minimum-viable-accountable-factory.md`](implementation/minimum-viable-accountable-factory.md).
 - **Builder:** complete the twenty-four obligations in
-  [`05-acceptance-test-suite.md`](reference-factory/05-acceptance-test-suite.md).
+  [`05-acceptance-test-suite.md`](reference-factory/05-acceptance-test-suite.md),
+  then validate the [`example artifacts`](examples/artifacts/).
 - **Architect:** use
   [`factory-architecture-decision-guide.md`](templates/factory-architecture-decision-guide.md)
   and [`provider-tenant-capacity-design.md`](templates/provider-tenant-capacity-design.md).
@@ -57,9 +60,17 @@ do not connect the workflow to production.
   [`ninety-day-pilot-workbook.md`](templates/ninety-day-pilot-workbook.md)
   and [`comparative-pilot-protocol.md`](templates/comparative-pilot-protocol.md).
 - **Executive sponsor:** use
-  [`factory-outcome-scorecard.md`](templates/factory-outcome-scorecard.md).
+  [`factory-outcome-scorecard.md`](templates/factory-outcome-scorecard.md),
+  [`factory-balance-sheet.md`](templates/factory-balance-sheet.md), and the
+  [`accountable-factory diagnostic`](assessment/accountable-factory-diagnostic.md).
 - **Learning-system owner:** use
   [`memory-governance-workbook.md`](templates/memory-governance-workbook.md).
+- **Team or educator:** choose a path in
+  [`learning-paths/README.md`](learning-paths/README.md) and use the
+  [`chapter workbook`](study-guides/chapter-workbook.md) or the eighteen
+  [`individual learning guides`](study-guides/chapters/README.md).
+- **Red team:** run all twelve drills in the
+  [`failure laboratory`](exercises/failure-laboratory.md).
 
 ## Completion standard
 

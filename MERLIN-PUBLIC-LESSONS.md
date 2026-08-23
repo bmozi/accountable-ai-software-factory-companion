@@ -1,5 +1,10 @@
 # Merlin Software Factory — Publication-Safe Engineering Lessons
 
+For decision-ready summaries of these and additional first-party architecture
+lessons, see the nine
+[`sanitized Merlin pattern cards`](merlin/sanitized-pattern-cards.md). The cards
+pair every pattern with proof obligations and an explicit evidence boundary.
+
 **Evidence class:** first-party historical and design lessons, not a comparative
 benchmark or claim of organization-scale superiority
 

@@ -6,7 +6,7 @@ not legal advice.
 
 | Material | License | Personal or nonprofit use | Commercial or internal for-profit use |
 | --- | --- | --- | --- |
-| Executable Python and shell code identified by `LICENSE-CODE` | MIT | Permitted with the required notice | Permitted with the required notice |
+| Executable Python and shell code identified by `LICENSE-CODE`, including the reader validators | MIT | Permitted with the required notice | Permitted with the required notice |
 | Templates, contracts, exercises, traces, acceptance obligations, and prose | CC BY-NC-SA 4.0 | Permitted with attribution and share-alike obligations | Request separate written permission |
 
 Commercial content use includes bundling the written materials into a paid

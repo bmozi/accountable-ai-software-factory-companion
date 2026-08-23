@@ -28,6 +28,8 @@ This repository contains two distinct kinds of work, licensed differently.
    Applies to:
      reference-factory/example/*.py
      reference-factory/run-reader-journey.sh
+     scripts/*.py
+     tools/*.py
      Executable source files that explicitly carry the MIT license.
 
    Summary:
