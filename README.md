@@ -8,7 +8,7 @@ operating instruments that readers can inspect, run, challenge, and adapt. The
 book stands alone. The companion exists so readers do not have to retype the
 reference implementation or reconstruct the decision artifacts from prose.
 
-> **Series:** The Accountable AI Engineering Series — Book 3  
+> **Series:** The Accountable AI Engineering Series — Book 3
 > **Companion:** https://github.com/bmozi/accountable-ai-software-factory-companion
 
 ## Start with a failure, not a demo
@@ -32,6 +32,7 @@ Read [`START-HERE.md`](START-HERE.md) for a 30-minute path.
 |---|---|
 | [`reference-factory/`](reference-factory/) | Vendor-neutral domain contracts, authority and evidence boundaries, recovery protocol, canonical fictional trace, twenty-four acceptance obligations, and runnable teaching code. |
 | [`templates/`](templates/) | Factory charter, Work Order, risk-to-evidence, decision-rights, human-judgment, maturity, outcome, operations, threat-model, improvement, architecture-choice, and ninety-day pilot instruments. |
+| [`MERLIN-PUBLIC-LESSONS.md`](MERLIN-PUBLIC-LESSONS.md) | Sanitized first-party failure lessons, evidence limits, and the responsibility-level architecture they changed. |
 | [`PUBLIC-IMPLEMENTATIONS-TO-STUDY.md`](PUBLIC-IMPLEMENTATIONS-TO-STUDY.md) | A responsibility-by-responsibility map of public agent and software-factory projects. |
 | [`EDITION-MAP.md`](EDITION-MAP.md) | Companion version relationship to Kindle and print editions. |
 | [`ERRATA.md`](ERRATA.md) | Confirmed corrections and their disposition. |
