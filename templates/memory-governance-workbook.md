@@ -18,11 +18,11 @@ factory may retrieve or use to change future behavior.
 
 ## Learning record
 
-**Identifier:**  
-**State:** record / observation / candidate / validated / retired  
-**Created by:**  
-**Created at:**  
-**Reviewed by:**  
+**Identifier:**<br>
+**State:** record / observation / candidate / validated / retired<br>
+**Created by:**<br>
+**Created at:**<br>
+**Reviewed by:**<br>
 **Next review:**
 
 ### Claim
