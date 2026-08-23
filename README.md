@@ -86,6 +86,8 @@ Executable Python and shell code under `reference-factory/example/` and
 `reference-factory/run-reader-journey.sh` is MIT licensed. Written content,
 templates, contracts, exercises, and explanatory material are CC BY-NC-SA 4.0.
 See [`LICENSE`](LICENSE), [`LICENSE-CODE`](LICENSE-CODE), and
-[`LICENSE-CONTENT`](LICENSE-CONTENT).
+[`LICENSE-CONTENT`](LICENSE-CONTENT). The
+[`COMMERCIAL-USE.md`](COMMERCIAL-USE.md) guide explains the boundary in plain
+language; the license files remain authoritative.
 
 © 2026 John Briggs

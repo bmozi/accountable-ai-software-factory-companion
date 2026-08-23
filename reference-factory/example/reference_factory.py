@@ -2,6 +2,8 @@
 
 Teaching code only: SQLite supplies durable records and transactions, while a
 caller supplies model, policy, verifier, and delivery adapters.
+
+© 2026 John Briggs — MIT licensed; see ../../LICENSE-CODE.
 """
 
 from __future__ import annotations

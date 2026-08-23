@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Run the fictional Meridian Ledger failure-oriented factory journey."""
+"""Run the fictional Meridian Ledger failure-oriented factory journey.
+
+© 2026 John Briggs — MIT licensed; see ../../LICENSE-CODE.
+"""
 
 from __future__ import annotations
 

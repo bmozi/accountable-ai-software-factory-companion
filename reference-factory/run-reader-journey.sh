@@ -1,4 +1,5 @@
 #!/bin/sh
+# © 2026 John Briggs — MIT licensed; see ../LICENSE-CODE.
 set -eu
 cd "$(dirname "$0")/example"
 python3 -m unittest -v test_reference_factory.py

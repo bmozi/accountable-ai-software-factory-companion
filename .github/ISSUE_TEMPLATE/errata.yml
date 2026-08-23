@@ -1,0 +1,58 @@
+name: Report possible errata
+description: Report a possible error in the book or companion materials.
+title: "Errata: "
+labels: [errata]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make the book and companion more accurate. Do not include private or confidential information.
+  - type: dropdown
+    id: source
+    attributes:
+      label: Affected source
+      options:
+        - Kindle book
+        - Paperback book
+        - Hardcover book
+        - Companion repository
+        - Companion release download
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Edition or companion version
+      placeholder: "Example: first edition / v0.3.1"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Exact location
+      description: Chapter and section, page, file path, or line number.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current wording or behavior
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Include a public source or minimal reproduction when applicable.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-safety confirmation
+      options:
+        - label: I have not included credentials, customer data, proprietary code, or unpublished manuscript material.
+          required: true

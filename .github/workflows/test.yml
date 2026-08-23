@@ -9,8 +9,13 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: companion-quality-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   reference-factory:
+    name: Content and executable integrity
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

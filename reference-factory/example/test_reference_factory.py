@@ -1,3 +1,8 @@
+"""Tests for the accountable-factory teaching core.
+
+© 2026 John Briggs — MIT licensed; see ../../LICENSE-CODE.
+"""
+
 import tempfile
 import unittest
 from pathlib import Path

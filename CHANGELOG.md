@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1 — 2026-08-22
+
+- Matched the series companion standard with structured errata and broken-link
+  intake, private security reporting, and plain-language licensing guidance.
+- Added traveling MIT notices to executable examples and automated checks for
+  public governance files, license notices, version pins, and image links.
+- Normalized workbook metadata formatting.
+
 ## 0.3.0 — 2026-08-22
 
 - Published the memory-governance workbook promised by Chapter 6.
