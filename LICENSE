@@ -1,0 +1,73 @@
+Licensing for the Accountable AI Software Factory Companion Repository
+
+This repository contains two distinct kinds of work, licensed differently.
+
+================================================================================
+
+1. WRITTEN CONTENT — Creative Commons BY-NC-SA 4.0
+   See: LICENSE-CONTENT
+
+   Applies to:
+     templates/         Reader decision and operating instruments
+     reference-factory/ Architecture contracts, traces, and acceptance suite,
+                        except executable code named below
+     Any prose, README, or creative work in this repository.
+
+   Summary:
+     Free for non-commercial use. Attribution required. Derivative works
+     must be shared under the same license. Commercial use — including
+     paid courses, paid SaaS products bundling these artifacts, or using
+     them as training data for commercial AI — requires separate written
+     permission from the author.
+
+================================================================================
+
+2. EXECUTABLE SOURCE CODE — MIT License
+   See: LICENSE-CODE
+
+   Applies to:
+     reference-factory/example/*.py
+     reference-factory/run-reader-journey.sh
+     Executable source files that explicitly carry the MIT license.
+
+   Summary:
+     Standard MIT terms. Use, fork, modify, integrate into commercial
+     or non-commercial projects freely, with attribution per the MIT
+     notice.
+
+================================================================================
+
+WHY THE SPLIT
+
+The written content, templates, contracts, workbooks, traces, and acceptance
+suite are the intellectual contribution of the book *The Accountable AI
+Software Factory*. They are offered freely for individual
+readers and non-commercial adoption — that is the spirit of a book
+companion repository — but it is not offered for commercial repackaging
+without acknowledgment of the source.
+
+The executable code is offered under MIT because that is the universal
+convention for technical book companion code; readers and teams should
+be able to drop these examples into their own projects without license
+friction.
+
+This dual-licensing arrangement is consistent with practices used by
+other technical book authors who want their code freely reusable while
+preserving control over the commercial use of their written work.
+
+================================================================================
+
+QUESTIONS
+
+For commercial licensing inquiries — speaking engagements, paid
+workshops based on these materials, enterprise training contracts that
+include these templates as deliverables, or AI training data licensing —
+contact the author directly.
+
+For attribution and citation questions, the recommended form is:
+
+    Adapted from *The Accountable AI Software Factory: Building Governed,
+    Verifiable Software at AI Speed* by John Briggs (independently published, 2026).
+    Companion repository: github.com/bmozi/accountable-ai-software-factory-companion
+
+© 2026 John Briggs
