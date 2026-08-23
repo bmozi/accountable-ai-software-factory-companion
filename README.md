@@ -5,8 +5,11 @@ Building Governed, Verifiable Software at AI Speed* by John Briggs.
 
 This repository turns the book's architecture into contracts, tests, and
 operating instruments that readers can inspect, run, challenge, and adapt. The
-book stands alone. The companion exists so readers do not have to retype the
-reference implementation or reconstruct the decision artifacts from prose.
+book is the curriculum; this repository is its laboratory. The companion
+exists so readers do not have to retype the reference implementation or
+reconstruct the decision artifacts from prose. It does not reproduce the
+book's reasoning, narrative consequences, architectural tradeoffs, or guidance
+for deciding when authority has been earned.
 
 > **Series:** The Accountable AI Engineering Series — Book 3
 > **Companion:** https://github.com/bmozi/accountable-ai-software-factory-companion
@@ -24,7 +27,9 @@ state, producer self-approval, artifact-bound evidence, evaluator conflict,
 duplicate operation identity, lost-response reconciliation, and durable
 decision history. It uses SQLite and requires no model provider or API key.
 
-Read [`START-HERE.md`](START-HERE.md) for a 30-minute path.
+Read [`START-HERE.md`](START-HERE.md) for the first laboratory path and
+[`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md) for the complete
+chapter-to-artifact curriculum.
 
 ## What is here
 
@@ -34,6 +39,7 @@ Read [`START-HERE.md`](START-HERE.md) for a 30-minute path.
 | [`templates/`](templates/) | Factory charter, Work Order, risk-to-evidence, decision-rights, human-judgment, maturity, outcome, operations, threat-model, improvement, architecture-choice, and ninety-day pilot instruments. |
 | [`MERLIN-PUBLIC-LESSONS.md`](MERLIN-PUBLIC-LESSONS.md) | Sanitized first-party failure lessons, evidence limits, and the responsibility-level architecture they changed. |
 | [`PUBLIC-IMPLEMENTATIONS-TO-STUDY.md`](PUBLIC-IMPLEMENTATIONS-TO-STUDY.md) | A responsibility-by-responsibility map of public agent and software-factory projects. |
+| [`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md) | The required reading, laboratory artifact, and proof-of-learning relationship for Chapters 3–18. |
 | [`EDITION-MAP.md`](EDITION-MAP.md) | Companion version relationship to Kindle and print editions. |
 | [`ERRATA.md`](ERRATA.md) | Confirmed corrections and their disposition. |
 
@@ -44,6 +50,14 @@ accountability invariants; it is not a production starter kit, benchmark, or
 claim of safety. Readers must select and operate their own identity, policy,
 storage, execution, verification, source-control, delivery, and observability
 systems.
+
+The repository can show that a test stopped an unsafe transition. It cannot,
+by itself, teach whether the policy is legitimate, whether the evidence is
+proportionate, whether a human reviewer has the competence and authority to
+accept the consequence, or whether a favorable output justified the continuing
+obligation. Those are book-level decisions. Treating the code as the complete
+method produces exactly the component-first failure the book is designed to
+prevent.
 
 The material derives from the book's vendor-neutral architecture and sanitized
 lessons from Merlin Software Factory. It deliberately does not publish private

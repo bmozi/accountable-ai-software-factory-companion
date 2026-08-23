@@ -1,5 +1,14 @@
 # Start Here
 
+## Use the book as the operating guide
+
+This repository is the laboratory for *The Accountable AI Software Factory*;
+it is not a parallel edition of the book. Before changing the teaching core,
+read the chapter paired with the responsibility you are changing in
+[`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md). The code demonstrates
+selected mechanisms. The book explains why they exist, how they interact, what
+they cannot prove, and who remains accountable for the result.
+
 ## Thirty-minute reader journey
 
 ### 1. Run the teaching core — five minutes
@@ -9,7 +18,8 @@
 ```
 
 Do not ask only whether the tests are green. Identify the promise each failure
-protects and the actor who must decide what happens next.
+protects and the actor who must decide what happens next. If you cannot explain
+those two things using the book's decision model, the exercise is not complete.
 
 ### 2. Read the three contracts — ten minutes
 
@@ -46,3 +56,14 @@ do not connect the workflow to production.
   [`ninety-day-pilot-workbook.md`](templates/ninety-day-pilot-workbook.md).
 - **Executive sponsor:** use
   [`factory-outcome-scorecard.md`](templates/factory-outcome-scorecard.md).
+
+## Completion standard
+
+Running the script is setup, not completion. A completed reader exercise leaves
+five things another accountable operator can inspect:
+
+1. the book principle and chapter governing the change;
+2. the contract or decision artifact you changed;
+3. one failed test proving the unsafe path stops;
+4. the named actor authorized to disposition the remaining uncertainty; and
+5. the outcome and countermetric that determine whether authority continues.

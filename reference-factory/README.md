@@ -1,6 +1,6 @@
 # Build the Reference Accountable Factory
 
-**Version:** 0.1 working draft
+**Version:** 0.2
 **Relationship:** implementation companion to Chapters 3–18
 **Boundary:** vendor-neutral teaching contracts; not production code and not a
 description of any private factory
@@ -15,7 +15,7 @@ control, policy engine, CI system, and deployment environment.
 From the repository root:
 
 ```bash
-./companion/reference-factory/run-reader-journey.sh
+./reference-factory/run-reader-journey.sh
 ```
 
 The command runs the failure-oriented tests and walks the fictional Meridian
@@ -26,6 +26,11 @@ narrowed authority, rejected learning, and prototype retirement.
 
 > Read the architecture. Run the failure. Change the contract. Build your first
 > bounded factory.
+
+“Read the architecture” means reading the paired book chapter, not inferring a
+complete operating model from function names. Use the
+[`BOOK-TO-COMPANION-MAP.md`](../BOOK-TO-COMPANION-MAP.md) curriculum before
+altering a responsibility or widening authority.
 
 ## What you will build
 
