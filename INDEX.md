@@ -8,6 +8,8 @@ the operating guide; these materials help you apply and test its decisions.
 | If you need to… | Start with | Leave with |
 | --- | --- | --- |
 | Understand the system in thirty minutes | [`START-HERE.md`](START-HERE.md) | One failed-path explanation and one bounded decision artifact |
+| Decide whether Book 2's governed loop has become a factory problem | [`FROM-GOVERNED-LOOP-TO-FACTORY.md`](FROM-GOVERNED-LOOP-TO-FACTORY.md) | A justified stay-with-the-loop or graduate-to-the-factory decision |
+| Understand the role of each book in the series | [`SERIES-PROGRESSION.md`](SERIES-PROGRESSION.md) | The next learning boundary, without mistaking a companion for the book |
 | Determine whether your organization is ready | [`assessment/accountable-factory-diagnostic.md`](assessment/accountable-factory-diagnostic.md) | A responsibility profile and safe operating boundary |
 | Build one narrow factory path | [`implementation/minimum-viable-accountable-factory.md`](implementation/minimum-viable-accountable-factory.md) | A tested Work Order-to-receipt path |
 | Follow a complete worked example | [`examples/meridian-ledger-complete-trace.md`](examples/meridian-ledger-complete-trace.md) | A reconstructable fictional decision chain |
@@ -49,3 +51,7 @@ The companion has done its job when you can show—not merely claim—that:
 5. indeterminate effects reconciled before retry;
 6. release created an owned receipt and recovery path; and
 7. observed outcomes could narrow or retire authority.
+
+The test result is incomplete until the reader can connect each proof to the
+book principle that gives it meaning and name the human authority responsible
+for the remaining uncertainty.

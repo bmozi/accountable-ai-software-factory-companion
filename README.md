@@ -1,7 +1,15 @@
 # The Accountable AI Software Factory — Companion Repository
 
-Reader-facing, runnable materials for *The Accountable AI Software Factory:
-Building Governed, Verifiable Software at AI Speed* by John Briggs.
+## Minimum Accountable AI Software Factory Laboratory
+
+Build, break, and inspect a small vendor-neutral teaching factory. The
+laboratory makes selected responsibilities concrete: durable intent, bounded
+authority, evidence, disposition, recovery, release, outcomes, and governed
+learning. It is a place to test the book's architecture—not a downloadable
+substitute for that architecture or a production-ready platform.
+
+These are reader-facing, runnable materials for *The Accountable AI Software
+Factory: Building Governed, Verifiable Software at AI Speed* by John Briggs.
 
 This repository turns the book's architecture into contracts, tests, and
 operating instruments that readers can inspect, run, challenge, and adapt. The
@@ -11,6 +19,18 @@ reconstruct the decision artifacts from prose. It does not reproduce the
 book's reasoning, narrative consequences, architectural tradeoffs, or guidance
 for deciding when authority has been earned.
 
+### The book-and-laboratory contract
+
+- **The laboratory demonstrates selected mechanisms:** contracts, state
+  transitions, failure obligations, tests, and decision artifacts.
+- **The book supplies the operating model:** why the responsibilities belong
+  together, which tradeoffs matter, who has authority, how consequences change
+  the required evidence, and how the organization learns without letting the
+  system grade itself.
+- **A completed lesson uses both:** run a failure, connect it to the governing
+  book principle, change one boundary, and explain who must decide what happens
+  next.
+
 > **Series:** The Accountable AI Engineering Series — Book 3
 > **Companion:** https://github.com/bmozi/accountable-ai-software-factory-companion
 
@@ -18,6 +38,10 @@ This volume builds on the public
 [*Harnessing the Horse* companion](https://github.com/bmozi/harnessing-the-horse-companion).
 Book 2 teaches disciplined AI-assisted work; this repository carries that
 discipline into an accountable production system.
+Use [`FROM-GOVERNED-LOOP-TO-FACTORY.md`](FROM-GOVERNED-LOOP-TO-FACTORY.md)
+to decide whether you have actually crossed that boundary, and
+[`SERIES-PROGRESSION.md`](SERIES-PROGRESSION.md) to see the role of all four
+books.
 
 ## Start with a failure, not a demo
 
@@ -43,7 +67,9 @@ who do not use Git can download the versioned bundle from the
 
 | Path | Reader value |
 |---|---|
-| [`INDEX.md`](INDEX.md) | Outcome-based map of the complete premium companion. |
+| [`INDEX.md`](INDEX.md) | Outcome-based map of the companion laboratory. |
+| [`FROM-GOVERNED-LOOP-TO-FACTORY.md`](FROM-GOVERNED-LOOP-TO-FACTORY.md) | Graduation test and translation exercise for readers arriving from Book 2. |
+| [`SERIES-PROGRESSION.md`](SERIES-PROGRESSION.md) | The distinct question and completion boundary for each book in the series. |
 | [`implementation/`](implementation/) | End-to-end minimum viable accountable factory construction guide. |
 | [`reference-factory/`](reference-factory/) | Vendor-neutral domain contracts, authority and evidence boundaries, recovery protocol, canonical fictional trace, twenty-four acceptance obligations, and runnable teaching code. |
 | [`accountable_factory/`](accountable_factory/) and [`policies/`](policies/) | One canonical implementation and explicit admission/authority policy shared by the CLI, validator, examples, and tests. |

@@ -9,6 +9,24 @@ read the chapter paired with the responsibility you are changing in
 selected mechanisms. The book explains why they exist, how they interact, what
 they cannot prove, and who remains accountable for the result.
 
+The shortest complete laboratory path is:
+
+`READ → BREAK → CHANGE → EXPLAIN → DECIDE`
+
+Running code is only the middle of that path. A reader who can make the tests
+green but cannot connect the result to the book's responsibility and authority
+model has not completed the lesson.
+
+## Arriving from Book 2?
+
+Book 2 ends with one team's governed delivery loop and an explicit **SHIP**,
+**REVISE**, or **STOP** decision. Use the
+[`Book 2-to-Book 3 graduation guide`](FROM-GOVERNED-LOOP-TO-FACTORY.md) before
+adding factory infrastructure. If one team can still govern the work honestly
+inside one repository, continue strengthening the Book 2 loop. Scale the
+accountability system only when the responsibility boundary has actually
+expanded.
+
 ## Thirty-minute reader journey
 
 ### 1. Run the teaching core — five minutes
@@ -46,7 +64,7 @@ do not connect the workflow to production.
 
 ## Next paths
 
-- **Complete implementation path:** follow
+- **Laboratory implementation path:** follow
   [`implementation/minimum-viable-accountable-factory.md`](implementation/minimum-viable-accountable-factory.md).
 - **Builder:** complete the twenty-four obligations in
   [`05-acceptance-test-suite.md`](reference-factory/05-acceptance-test-suite.md),
@@ -71,6 +89,9 @@ do not connect the workflow to production.
   [`individual learning guides`](study-guides/chapters/README.md).
 - **Red team:** run all twelve drills in the
   [`failure laboratory`](exercises/failure-laboratory.md).
+- **Series reader:** use the [`series progression`](SERIES-PROGRESSION.md) to
+  connect engineer judgment, team delivery, factory accountability, and
+  organizational adoption without collapsing them into one problem.
 
 ## Completion standard
 

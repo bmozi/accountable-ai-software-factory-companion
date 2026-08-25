@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Positioned the unchanged published companion as a minimum accountable AI
+  software-factory laboratory rather than a production starter platform.
+- Added the Book 2-to-Book 3 graduation guide and four-book progression.
+- Strengthened the book-and-laboratory contract so runnable mechanisms remain
+  explicitly tied to the book's operating model, tradeoffs, and decision
+  authority.
+
 ## 1.1.0 — 2026-08-23
 
 - Replaced the split schema/validator/example models with one canonical domain,
