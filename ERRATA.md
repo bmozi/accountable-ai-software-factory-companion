@@ -1,6 +1,6 @@
 # Errata
 
-No confirmed book errata have been recorded through companion version 1.1.0.
+No confirmed book errata have been recorded through companion version 1.1.1.
 
 Version 1.1 replaces the companion’s v1.0 split teaching models with one
 canonical executable contract. This is a companion implementation correction;

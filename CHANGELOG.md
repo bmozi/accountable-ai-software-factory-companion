@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.1.1 — 2026-08-24
+
 - Positioned the unchanged published companion as a minimum accountable AI
   software-factory laboratory rather than a production starter platform.
 - Added the Book 2-to-Book 3 graduation guide and four-book progression.

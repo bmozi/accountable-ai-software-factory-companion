@@ -37,4 +37,4 @@ jobs:
       - name: Build and test versioned reader bundle
         run: |
           python scripts/build_reader_bundle.py
-          python -m zipfile -t dist/accountable-ai-software-factory-companion-v1.1.0.zip
+          python -m zipfile -t dist/accountable-ai-software-factory-companion-v1.1.1.zip

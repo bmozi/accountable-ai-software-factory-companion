@@ -24,6 +24,7 @@ TOP_LEVEL = (
     "CONTRIBUTING.md",
     "EDITION-MAP.md",
     "ERRATA.md",
+    "FROM-GOVERNED-LOOP-TO-FACTORY.md",
     "INDEX.md",
     "LICENSE",
     "LICENSE-CODE",
@@ -32,6 +33,7 @@ TOP_LEVEL = (
     "PUBLIC-IMPLEMENTATIONS-TO-STUDY.md",
     "README.md",
     "SECURITY.md",
+    "SERIES-PROGRESSION.md",
     "START-HERE.md",
 )
 DIRECTORIES = (
@@ -85,7 +87,7 @@ def digest(path: Path) -> str:
 
 
 def write_zip(path: Path, prefix: str, files: list[Path], manifest: bytes) -> None:
-    timestamp = (2026, 8, 23, 0, 0, 0)
+    timestamp = (2026, 8, 24, 0, 0, 0)
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for source in files:
             relative = source.relative_to(ROOT).as_posix()

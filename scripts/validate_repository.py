@@ -14,7 +14,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 PUBLISHED_PATHS = (
     "companion/factory-charter-template.md",
     "companion/memory-governance-workbook.md",
@@ -54,7 +54,9 @@ REQUIRED_PUBLIC_FILES = (
     ".github/ISSUE_TEMPLATE/config.yml",
 )
 PREMIUM_PATHS = (
+    "FROM-GOVERNED-LOOP-TO-FACTORY.md",
     "INDEX.md",
+    "SERIES-PROGRESSION.md",
     "assessment/accountable-factory-diagnostic.md",
     "benchmarks/pilot-observations.example.json",
     "decisions/architecture-decision-starters.md",
@@ -195,7 +197,7 @@ def main() -> int:
         return 1
 
     print(
-        f"Validated premium companion {VERSION}: {len(PUBLISHED_PATHS)} published "
+        f"Validated companion laboratory {VERSION}: {len(PUBLISHED_PATHS)} published "
         f"paths, {len(PREMIUM_PATHS)} curriculum contracts, public governance, "
         "licenses, versions, JSON, and all local links."
     )

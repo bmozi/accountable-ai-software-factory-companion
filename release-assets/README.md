@@ -1,6 +1,6 @@
 # Reader Release Bundle
 
-Every tagged premium companion release includes a ZIP archive containing the
+Every tagged companion-laboratory release includes a ZIP archive containing the
 complete reader curriculum, templates, schemas, examples, tests, and licenses.
 It excludes Git metadata, GitHub administration files, caches, databases, and
 build output.
