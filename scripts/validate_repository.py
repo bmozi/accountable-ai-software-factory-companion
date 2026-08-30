@@ -51,7 +51,9 @@ REQUIRED_PUBLIC_FILES = (
     "LICENSE-CONTENT",
     ".github/ISSUE_TEMPLATE/errata.yml",
     ".github/ISSUE_TEMPLATE/broken-resource.yml",
+    ".github/ISSUE_TEMPLATE/reader-usability.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
+    "READER-USABILITY-PASS.md",
 )
 PREMIUM_PATHS = (
     "FROM-GOVERNED-LOOP-TO-FACTORY.md",

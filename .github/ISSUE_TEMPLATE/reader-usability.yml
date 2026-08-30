@@ -1,0 +1,52 @@
+name: Reader usability observation
+description: Record one external reader session using the v1.2.0 protocol.
+title: "[Reader pass]: "
+labels: [reader-usability]
+body:
+  - type: input
+    id: participant
+    attributes:
+      label: Participant profile
+      description: Use a non-identifying description such as software engineer, architect, or engineering leader.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python and Git versions, shell, and assistive technology if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Task outcomes
+      description: For tasks 1 through 7, record pass or fail, elapsed time, commands, and any coaching.
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: Wrong turns and reader language
+      description: Record observable friction and short participant comments; do not infer intent.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Highest-severity finding
+      options:
+        - None
+        - Minor friction
+        - Material confusion
+        - Task failure
+        - Accessibility blocker
+    validations:
+      required: true
+  - type: textarea
+    id: followup
+    attributes:
+      label: Proposed follow-up
+      description: State the smallest change or further evidence needed.
+    validations:
+      required: true

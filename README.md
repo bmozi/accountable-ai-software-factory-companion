@@ -79,6 +79,8 @@ chapter-to-artifact curriculum. Use [`INDEX.md`](INDEX.md) to choose a
 role-based, chapter-based, implementation, or failure-laboratory path. Readers
 who do not use Git can download the versioned bundle from the
 [latest release](https://github.com/bmozi/accountable-ai-software-factory-companion/releases/latest).
+Human usability evidence is tracked separately from CI in the
+[`External Reader Usability Pass`](READER-USABILITY-PASS.md).
 
 ## What is here
 

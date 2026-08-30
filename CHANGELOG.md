@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added a cross-platform external-reader usability protocol and structured
+  observation form for the runnable laboratory.
+
 ## 1.2.0 — 2026-08-29
 
 - Added the Fit-Before-Ownership Decision Card and revised the AI-native
