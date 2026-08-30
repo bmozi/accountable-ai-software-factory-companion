@@ -1,9 +1,12 @@
 # Changelog
 
-## Unreleased
+## Unreleased (main; not yet tagged)
 
 - Added a cross-platform external-reader usability protocol and structured
   observation form for the runnable laboratory.
+
+The tagged `v1.2.0` release remains the latest stable bundle; the `1.2.1`
+metadata describes the current main-branch content pending a tagged release.
 
 ## 1.2.1 — 2026-08-30
 
