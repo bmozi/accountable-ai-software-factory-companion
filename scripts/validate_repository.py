@@ -14,7 +14,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.1.1"
+VERSION = "1.2.0"
 PUBLISHED_PATHS = (
     "companion/factory-charter-template.md",
     "companion/memory-governance-workbook.md",
@@ -156,8 +156,8 @@ def main() -> int:
             errors.append(f"{relative} contains {actual} {label}; expected {expected}")
 
     template_count = len(list((ROOT / "templates").glob("*.md")))
-    if template_count != 18:
-        errors.append(f"templates contains {template_count} instruments; expected 18")
+    if template_count != 19:
+        errors.append(f"templates contains {template_count} instruments; expected 19")
     chapter_guide_count = len(
         list((ROOT / "study-guides" / "chapters").glob("learning-guide-ch*.md"))
     )

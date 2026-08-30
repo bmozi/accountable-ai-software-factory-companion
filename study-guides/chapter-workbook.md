@@ -174,15 +174,16 @@ evidence.
 
 **Discuss:** Can the proposal alter the test that judges it?
 
-## Chapter 17 — Build, Buy, or Assemble
+## Chapter 17 — The New Economics of Ownership
 
-**Apply:** Compare three component strategies while holding intent, authority,
-evidence, recovery, outcome, and exit responsibilities constant.
+**Apply:** Fix the outcome and non-negotiable requirements, reject options that
+fail the common bar, then compare lifecycle ownership among the survivors.
 
-**Prove:** Remove one provider and show which records remain portable.
+**Prove:** Price one compensating seam, remove one provider, and show which
+records, authority, and recovery paths remain portable.
 
-**Discuss:** Which internal capability is accountability ownership rather than
-undifferentiated infrastructure?
+**Discuss:** Which internal workaround proves that a purchase relocated rather
+than eliminated ownership?
 
 ## Chapter 18 — The First Ninety Days
 

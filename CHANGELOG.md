@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## 1.2.0 — 2026-08-29
+
+- Added the Fit-Before-Ownership Decision Card and revised the AI-native
+  build-versus-buy calculator so requirements, seams, lifecycle ownership, and
+  reversal are evaluated in that order.
+- Synchronized Chapter 17's companion map, workbook, and learning guide with
+  *The New Economics of Ownership*.
+- Repaired the release ZIP so shell entry points retain executable permissions
+  and the archive includes the build and validation scripts it documents.
+- Added an unpack-and-run CI test, Windows execution coverage, and explicit
+  Python, Git, shell, and PowerShell prerequisites.
+
 ## 1.1.1 — 2026-08-24
 
 - Positioned the unchanged published companion as a minimum accountable AI

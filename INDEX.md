@@ -20,7 +20,7 @@ the operating guide; these materials help you apply and test its decisions.
 | Explain the architecture visually | [`diagrams/accountable-factory-visual-guide.md`](diagrams/accountable-factory-visual-guide.md) | Five discussion-ready diagrams |
 | Apply first-party lessons safely | [`merlin/sanitized-pattern-cards.md`](merlin/sanitized-pattern-cards.md) | Bounded patterns with limitations and verification questions |
 | Record an architecture choice | [`decisions/architecture-decision-starters.md`](decisions/architecture-decision-starters.md) | A reversible decision with explicit failure conditions |
-| Compare build, buy, and assemble | [`leadership/ai-native-build-versus-buy-calculator.md`](leadership/ai-native-build-versus-buy-calculator.md) | A lifecycle obligation and replacement-slice decision |
+| Compare build, buy, and assemble without lowering the requirement | [`templates/fit-before-ownership-decision-card.md`](templates/fit-before-ownership-decision-card.md), then [`leadership/ai-native-build-versus-buy-calculator.md`](leadership/ai-native-build-versus-buy-calculator.md) | A requirements-gated decision with priced seams, lifecycle obligations, and a reversal path |
 | Govern enterprise agent roles | [`leadership/enterprise-agent-role-and-decision-rights-map.md`](leadership/enterprise-agent-role-and-decision-rights-map.md) | Explicit machine contributions and human decision rights |
 | Expand workforce capability safely | [`workforce/ai-practice-and-guardrail-guide.md`](workforce/ai-practice-and-guardrail-guide.md) | A work-class-specific practice level, guardrail card, and authority decision |
 

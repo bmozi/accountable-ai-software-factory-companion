@@ -35,7 +35,7 @@ for readers who want to practice, teach, or operationalize the material.
 14. [The Factory as an Internal Product](learning-guide-ch14-the-factory-as-an-internal-product.md)
 15. [Measure Outcomes, Not Machine Activity](learning-guide-ch15-measure-outcomes-not-machine-activity.md)
 16. [The Factory That Improves the Factory](learning-guide-ch16-the-factory-that-improves-the-factory.md)
-17. [Build, Buy, or Assemble](learning-guide-ch17-build-buy-or-assemble.md)
+17. [The New Economics of Ownership](learning-guide-ch17-build-buy-or-assemble.md)
 18. [The First Ninety Days](learning-guide-ch18-the-first-ninety-days.md)
 
 ## Publication boundary

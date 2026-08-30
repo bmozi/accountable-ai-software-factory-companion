@@ -18,6 +18,10 @@ From the repository root:
 ./reference-factory/run-reader-journey.sh
 ```
 
+This command requires Python 3.10 or newer, Git 2.30 or newer, and a POSIX
+shell. Windows readers can use Git Bash or WSL, or run the equivalent native
+PowerShell commands documented in the root [`README.md`](../README.md#requirements-and-supported-ways-to-run).
+
 The command proves all twenty-four published failure obligations and walks the
 fictional Meridian Ledger case through admission, bounded execution,
 independent evidence, human disposition, a deliberately lost release response,

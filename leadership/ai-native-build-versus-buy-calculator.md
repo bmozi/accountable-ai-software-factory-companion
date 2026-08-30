@@ -6,6 +6,46 @@ Compare buying, assembling, and owning a capability after AI lowers the cost of
 implementation. Evaluate the complete operated obligation, not feature parity
 or license price alone.
 
+This instrument uses two gates in order:
+
+1. **Fit:** can the option meet every non-negotiable requirement at the required
+   consequence and evidence floor?
+2. **Ownership:** among the viable options, which lifecycle obligation should
+   the organization accept?
+
+Do not let a preference for vendor ownership convert a failed requirement into
+a passing one.
+
+## Requirements gate
+
+Define the fixed bar before naming a preferred source.
+
+- Required outcome:
+- Intended users and affected people:
+- Non-negotiable functional requirements:
+- Non-negotiable safety, privacy, security, legal, or regulatory constraints:
+- Evidence required before release or reliance:
+- Authority and appeal rights that must remain explicit:
+- Required integrations and data boundaries:
+- Degraded mode and recovery expectation:
+- Valid stopping conditions:
+
+Evaluate each complete option, including any workarounds it needs.
+
+| Requirement | Current/do nothing | Buy | Assemble | Build | Replace a slice |
+| --- | --- | --- | --- | --- | --- |
+| Required outcome | Pass / Fail / Unknown |  |  |  |  |
+| Functional fit |  |  |  |  |  |
+| Evidence floor |  |  |  |  |  |
+| Authority boundary |  |  |  |  |  |
+| Integration and data |  |  |  |  |  |
+| Degraded mode and recovery |  |  |  |  |  |
+| Exit and record continuity |  |  |  |  |  |
+
+An option that fails a non-negotiable row is not admitted to the ownership
+comparison. An unknown requires investigation, a bounded pilot, or an explicit
+decision not to proceed.
+
 ## Candidate options
 
 Describe at least four:
@@ -15,6 +55,24 @@ Describe at least four:
 3. assemble purchased components behind owned contracts;
 4. build and operate the capability;
 5. replace only a differentiating or expensive module, if relevant.
+
+You may also use **buy to learn** as a time-bounded discovery option. Define its
+learning objective, reliance limit, portability boundary, decision date, and
+trigger for staying, assembling, replacing, building, or stopping before the
+trial begins.
+
+## Seam ledger
+
+For each requirement a purchased or assembled option cannot meet directly,
+record the compensation as part of that option rather than treating it as free
+internal work.
+
+| Fit gap | Compensation or workaround | Accountable owner | Coupled systems | Vendor-change break trigger | Detection and recovery | Recurring load | Removal path |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |  |  |
+
+If no one owns a required compensation, the option does not pass the
+requirements gate.
 
 ## Lifecycle cost worksheet
 
@@ -84,10 +142,13 @@ replacement.
 
 ## Decision record
 
+- Requirements-gate result:
+- Rejected options and failed requirements:
 - Selected option:
 - Expected outcome:
 - Evidence supporting the choice:
 - Strongest counterargument:
+- Seam obligations accepted:
 - Unpriced or unknown obligation:
 - Dependency premium accepted:
 - Reversal and exit trigger:

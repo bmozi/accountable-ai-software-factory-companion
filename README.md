@@ -43,6 +43,23 @@ to decide whether you have actually crossed that boundary, and
 [`SERIES-PROGRESSION.md`](SERIES-PROGRESSION.md) to see the role of all four
 books.
 
+## Requirements and supported ways to run
+
+- **Python 3.10 or newer** (the teaching core uses only the standard library);
+- **Git 2.30 or newer** (the journey creates one disposable local Git effect);
+- **macOS or Linux:** a POSIX shell such as `sh` or `bash`;
+- **Windows:** Git Bash or WSL for the documented shell command, or PowerShell
+  with the native Python commands below.
+
+No model provider, API key, Docker installation, or cloud account is required.
+From Windows PowerShell, run the same journey without a shell wrapper:
+
+```powershell
+$env:PYTHONPATH = "."
+python -m unittest discover -s reference-factory/example -p "test_*.py" -v
+python reference-factory/example/run_reader_journey.py
+```
+
 ## Start with a failure, not a demo
 
 ```bash
@@ -82,9 +99,9 @@ who do not use Git can download the versioned bundle from the
 | [`diagrams/`](diagrams/) | Five editable Mermaid architecture and recovery views for workshops. |
 | [`merlin/`](merlin/) | Nine sanitized first-party Merlin pattern cards with evidence limits and proof obligations. |
 | [`assessment/`](assessment/) and [`decisions/`](decisions/) | Thirty-question responsibility diagnostic and ten reversible architecture-decision starters. |
-| [`leadership/`](leadership/) and [`workforce/`](workforce/) | Build-versus-buy, enterprise decision-rights, AI practice, formation, and guardrail instruments. |
+| [`leadership/`](leadership/) and [`workforce/`](workforce/) | Requirements-gated build-versus-buy, enterprise decision-rights, AI practice, formation, and guardrail instruments. |
 | [`companion/`](companion/) | Stable artifact paths named by the published Book 3. |
-| [`templates/`](templates/) | Eighteen instruments covering factory charter, Work Orders, exploration, stakeholder adoption, memory governance, capacity and tenant fairness, risk-to-evidence, decision rights, human judgment, maturity, outcomes, operations, economics, threat modeling, comparative pilots, improvement, architecture choice, and the first ninety days. |
+| [`templates/`](templates/) | Nineteen instruments covering factory charter, Work Orders, exploration, stakeholder adoption, memory governance, capacity and tenant fairness, risk-to-evidence, decision rights, human judgment, maturity, outcomes, operations, economics, fit-before-ownership, threat modeling, comparative pilots, improvement, architecture choice, and the first ninety days. |
 | [`MERLIN-PUBLIC-LESSONS.md`](MERLIN-PUBLIC-LESSONS.md) | Sanitized first-party failure lessons, evidence limits, and the responsibility-level architecture they changed. |
 | [`PUBLIC-IMPLEMENTATIONS-TO-STUDY.md`](PUBLIC-IMPLEMENTATIONS-TO-STUDY.md) | A responsibility-by-responsibility map of public agent and software-factory projects. |
 | [`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md) | The required reading, laboratory artifact, and proof-of-learning relationship for Chapters 3–18. |

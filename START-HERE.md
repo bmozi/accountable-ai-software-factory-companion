@@ -17,6 +17,13 @@ Running code is only the middle of that path. A reader who can make the tests
 green but cannot connect the result to the book's responsibility and authority
 model has not completed the lesson.
 
+## Before you run it
+
+Install Python 3.10 or newer and Git 2.30 or newer. On macOS and Linux, use the
+shell command below. On Windows, use Git Bash or WSL, or follow the PowerShell
+commands in the repository [`README.md`](README.md#requirements-and-supported-ways-to-run).
+The exercise is offline and needs no model provider, API key, or cloud account.
+
 ## Arriving from Book 2?
 
 Book 2 ends with one team's governed delivery loop and an explicit **SHIP**,
@@ -72,11 +79,16 @@ do not connect the workflow to production.
 - **Architect:** use
   [`factory-architecture-decision-guide.md`](templates/factory-architecture-decision-guide.md)
   and [`provider-tenant-capacity-design.md`](templates/provider-tenant-capacity-design.md).
+  For a sourcing decision, fix the requirement first with the
+  [`Fit-Before-Ownership Decision Card`](templates/fit-before-ownership-decision-card.md).
 - **Security reviewer:** use
   [`factory-threat-model.md`](templates/factory-threat-model.md).
 - **Engineering leader:** use
   [`ninety-day-pilot-workbook.md`](templates/ninety-day-pilot-workbook.md)
   and [`comparative-pilot-protocol.md`](templates/comparative-pilot-protocol.md).
+  If the pilot informs build, buy, or assemble, use the
+  [`AI-Native Build-versus-Buy Calculator`](leadership/ai-native-build-versus-buy-calculator.md)
+  only after every option passes the same requirements gate.
 - **Executive sponsor:** use
   [`factory-outcome-scorecard.md`](templates/factory-outcome-scorecard.md),
   [`factory-balance-sheet.md`](templates/factory-balance-sheet.md), and the

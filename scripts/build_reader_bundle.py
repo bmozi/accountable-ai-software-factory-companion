@@ -37,6 +37,7 @@ TOP_LEVEL = (
     "START-HERE.md",
 )
 DIRECTORIES = (
+    ".github",
     "accountable_factory",
     "assessment",
     "benchmarks",
@@ -53,6 +54,7 @@ DIRECTORIES = (
     "policies",
     "reference-factory",
     "release-assets",
+    "scripts",
     "schemas",
     "study-guides",
     "templates",
@@ -87,16 +89,19 @@ def digest(path: Path) -> str:
 
 
 def write_zip(path: Path, prefix: str, files: list[Path], manifest: bytes) -> None:
-    timestamp = (2026, 8, 24, 0, 0, 0)
+    timestamp = (2026, 8, 29, 0, 0, 0)
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for source in files:
             relative = source.relative_to(ROOT).as_posix()
             info = zipfile.ZipInfo(f"{prefix}/{relative}", timestamp)
             info.compress_type = zipfile.ZIP_DEFLATED
-            info.external_attr = 0o100644 << 16
+            info.create_system = 3
+            executable = source.suffix == ".sh" or bool(source.stat().st_mode & 0o111)
+            info.external_attr = (0o100755 if executable else 0o100644) << 16
             archive.writestr(info, source.read_bytes())
         info = zipfile.ZipInfo(f"{prefix}/BUNDLE-MANIFEST.json", timestamp)
         info.compress_type = zipfile.ZIP_DEFLATED
+        info.create_system = 3
         info.external_attr = 0o100644 << 16
         archive.writestr(info, manifest)
 
