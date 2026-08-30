@@ -343,7 +343,17 @@ class Factory:
             self.policy.assert_authority(work.document, dimension, value)
         except PolicyViolation as exc:
             with self.db:
-                self._event(work_order_id, "authority_denied", actor, {"dimension": dimension, "value": value, "reason": str(exc)})
+                self._event(
+                    work_order_id,
+                    "authority_denied",
+                    actor,
+                    {
+                        "dimension": dimension,
+                        "value": value,
+                        "reason": str(exc),
+                        "nextOwner": work.document["consequenceOwner"],
+                    },
+                )
             raise ContractViolation(str(exc)) from exc
         with self.db:
             self._event(work_order_id, "authority_used", actor, {"dimension": dimension, "value": value})

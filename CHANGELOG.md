@@ -5,6 +5,15 @@
 - Added a cross-platform external-reader usability protocol and structured
   observation form for the runnable laboratory.
 
+## 1.2.1 — 2026-08-30
+
+- Added next-owner attribution to denied-authority audit events so authority failure
+  traces preserve the immediate consequence owner.
+- Added the final decision record path for the complete Ship/Revise/Stop loop and
+  aligned companion references.
+- Documented minimum local prerequisites for running the runnable journey on
+  macOS/Linux and Windows.
+
 ## 1.2.0 — 2026-08-29
 
 - Added the Fit-Before-Ownership Decision Card and revised the AI-native

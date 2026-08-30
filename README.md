@@ -52,6 +52,14 @@ books.
   with the native Python commands below.
 
 No model provider, API key, Docker installation, or cloud account is required.
+
+From macOS or Linux, prefer:
+
+```bash
+PYTHONPATH=. python3 -m unittest discover -s reference-factory/example -p "test_*.py" -v
+PYTHONPATH=. python3 reference-factory/example/run_reader_journey.py
+```
+
 From Windows PowerShell, run the same journey without a shell wrapper:
 
 ```powershell
@@ -60,11 +68,14 @@ python -m unittest discover -s reference-factory/example -p "test_*.py" -v
 python reference-factory/example/run_reader_journey.py
 ```
 
-## Start with a failure, not a demo
+## Start with a protected path, then change a contract
 
 ```bash
 git clone https://github.com/bmozi/accountable-ai-software-factory-companion.git
 cd accountable-ai-software-factory-companion
+PYTHONPATH=. python3 -m unittest \
+  reference-factory/example/test_reference_factory.py -v \
+  -k prohibited_capability_is_denied_and_attributed
 ./reference-factory/run-reader-journey.sh
 ```
 
@@ -72,6 +83,12 @@ The standard-library Python teaching core executes all twenty-four published
 failure obligations plus one complete Work Order-to-outcome journey. It uses
 SQLite and a temporary local Git effect, and requires no model provider or API
 key.
+
+The first result is not an initially failing system. It is a concise,
+deterministically protected authority-denial path; then the journey shows the
+larger test suite and a bounded reader change. Follow `START-HERE.md` for the
+two-minute protected-path trace and the distinct repository-only mechanism
+completion boundary.
 
 Read [`START-HERE.md`](START-HERE.md) for the first laboratory path and
 [`BOOK-TO-COMPANION-MAP.md`](BOOK-TO-COMPANION-MAP.md) for the complete

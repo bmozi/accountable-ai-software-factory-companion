@@ -11,6 +11,12 @@ import json
 import sys
 from pathlib import Path
 
+# Permit the documented `python3 tools/validate_artifact.py ...` command from
+# the repository root without requiring an environment-variable workaround.
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from accountable_factory.contracts import validate_artifact
 
 validate = validate_artifact

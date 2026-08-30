@@ -14,7 +14,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.2.0"
+VERSION = "1.2.1"
 PUBLISHED_PATHS = (
     "companion/factory-charter-template.md",
     "companion/memory-governance-workbook.md",

@@ -9,13 +9,19 @@ read the chapter paired with the responsibility you are changing in
 selected mechanisms. The book explains why they exist, how they interact, what
 they cannot prove, and who remains accountable for the result.
 
-The shortest complete laboratory path is:
+The shortest full book-and-laboratory path is:
 
 `READ → BREAK → CHANGE → EXPLAIN → DECIDE`
 
 Running code is only the middle of that path. A reader who can make the tests
 green but cannot connect the result to the book's responsibility and authority
-model has not completed the lesson.
+model has not completed the full lesson.
+
+Readers using this public repository without the book can still complete a
+**repository-only mechanism pass**: run one protected path, name its enforced
+boundary and next owner, make one bounded red/green contract change, and record
+the remaining operational authority as withheld. That proves only the local
+mechanism lesson, not that a production policy is legitimate or sufficient.
 
 ## Before you run it
 
@@ -36,7 +42,21 @@ expanded.
 
 ## Thirty-minute reader journey
 
-### 1. Run the teaching core — five minutes
+### 1. Inspect one protected path — two minutes
+
+The first visible result is intentionally a *protected* path, not a claim that
+the system failed. In acceptance obligation A04, a producer asks for a
+production write it was not granted; the policy refuses it and records the
+requester, denied capability, and next accountable consequence owner. Read
+that test and trace before running the full suite:
+
+```bash
+PYTHONPATH=. python3 -m unittest \
+  reference-factory/example/test_reference_factory.py -v \
+  -k prohibited_capability_is_denied_and_attributed
+```
+
+### 2. Run the teaching core — five minutes
 
 ```bash
 ./reference-factory/run-reader-journey.sh
@@ -46,7 +66,7 @@ Do not ask only whether the tests are green. Identify the promise each failure
 protects and the actor who must decide what happens next. If you cannot explain
 those two things using the book's decision model, the exercise is not complete.
 
-### 2. Read the three contracts — ten minutes
+### 3. Read the three contracts — ten minutes
 
 1. [`01-domain-and-state-contract.md`](reference-factory/01-domain-and-state-contract.md)
 2. [`02-execution-authority-and-evidence.md`](reference-factory/02-execution-authority-and-evidence.md)
@@ -55,19 +75,25 @@ those two things using the book's decision model, the exercise is not complete.
 Mark one place where your current AI-assisted workflow relies on a transcript,
 convention, or model promise instead of an enforceable boundary.
 
-### 3. Change one contract — ten minutes
+### 4. Change one contract — ten minutes
 
 Choose one reversible work class. Add a criterion, prohibition, budget, or
 authority rule to the fictional Work Order. Write the failing test before
 changing the teaching core.
 
-### 4. Leave with one decision artifact — five minutes
+### 5. Leave with one decision artifact — five minutes
 
 Complete the first sections of
 [`factory-charter-template.md`](templates/factory-charter-template.md) and
-[`work-order-template.md`](templates/work-order-template.md). If you cannot
-name the outcome owner, release owner, evidence floor, and stopping boundary,
-do not connect the workflow to production.
+[`work-order-template.md`](templates/work-order-template.md):
+
+- outcome owner
+- release owner
+- consequence and stop conditions
+- evidence floor
+- unresolved risk and follow-up owner
+
+If any one is missing, do not connect the workflow to production.
 
 ## Next paths
 

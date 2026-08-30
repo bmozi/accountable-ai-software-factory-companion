@@ -94,6 +94,7 @@ class AcceptanceObligations(unittest.TestCase):
         self.admit()
         with self.assertRaisesRegex(ContractViolation, "denied"): self.factory.assert_capability(self.work["id"], "writes", "production", self.work["producerId"])
         self.assertEqual(self.factory.events(self.work["id"])[-1]["kind"], "authority_denied")
+        self.assertEqual(self.factory.events(self.work["id"])[-1]["body"]["nextOwner"], self.work["consequenceOwner"])
 
     def test_a05_budget_cannot_expand_silently(self) -> None:
         self.admit(); self.factory.create_attempt(self.work["id"], "A", self.work["producerId"], 10)

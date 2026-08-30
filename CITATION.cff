@@ -6,7 +6,8 @@ authors:
   - family-names: Briggs
     given-names: John
 year: 2026
-version: 1.2.0
+version: 1.2.1
+date-released: 2026-08-30
 repository-code: "https://github.com/bmozi/accountable-ai-software-factory-companion"
 license:
   - MIT
