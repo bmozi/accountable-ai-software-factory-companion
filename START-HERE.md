@@ -23,6 +23,26 @@ boundary and next owner, make one bounded red/green contract change, and record
 the remaining operational authority as withheld. That proves only the local
 mechanism lesson, not that a production policy is legitimate or sufficient.
 
+## Start without a repository
+
+The book prints the complete core lesson in **One Factory, From Request to
+Outcome**. Use its paper case without a runtime, or type its two Python files
+and run its ten tests. [`book-only-lesson/`](book-only-lesson/) provides an
+optional identical source copy. The longer journey below adds mechanisms and
+requires the separate prerequisites listed here.
+
+## Background for the implementation route
+
+No earlier series volume is required. The exercises assume basic programming,
+Git version control, automated tests, and command-line use. A branch isolates
+proposed edits; a diff shows their changes; a pull request asks for review and
+integration. Continuous integration (CI) runs automated checks. Integration
+combines accepted work, release puts it into use, and observation tests whether
+it helped. Those are separate claims. Readers new to these mechanics can first
+follow the book's cases and decision boundaries, then use a technical partner
+for the laboratory. Running this local example does not establish production
+readiness.
+
 ## Before you run it
 
 Install Python 3.10 or newer and Git 2.30 or newer. On macOS and Linux, use the

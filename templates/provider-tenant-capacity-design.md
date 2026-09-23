@@ -39,7 +39,24 @@ Create a durable reservation before starting work:
 
 Checking a remaining balance independently inside concurrent workers is not
 conservation. Two workers can both see the same balance. Reserve atomically,
-consume against the reservation, and release only what was unused.
+then reconcile each resource under its own release rule.
+
+Reserve each resource atomically, but record its unit and lifetime separately:
+
+| Resource | What remains consumed | When availability returns |
+| --- | --- | --- |
+| Work-order spend or action budget | Actual spend/actions remain charged | Release the unused reservation after reconciliation; completion does not replenish spent budget |
+| Concurrent worker, memory, or workspace lease | Occupancy while the work is live | Return the occupied permit when work has ended and reconciliation confirms the resource is free |
+| Provider rate window | Requests/tokens charged to the named window | Replenish under the provider's window or refill rule, not simply when a child finishes |
+| Scheduled reviewer capacity | Attention already spent | Release unused booked time; schedule new capacity explicitly rather than assuming a completed review restores the day's time |
+
+For a budget of 100, reserving 70 and spending 50 leaves 50 available after the
+unused 20 is released. For one concurrent-worker permit, acquiring and using
+it leaves zero available while work runs, then one after confirmed completion.
+A controller restart alone releases neither: reconcile live or indeterminate
+work before deciding what is free. Record the time window and release condition
+alongside every ledger row; unlike units cannot be compared as raw numbers.
+
 
 ## Tenant fairness
 
@@ -113,6 +130,11 @@ make its own recommendation permanent.
 5. Host headroom crosses the stop threshold during fan-out.
 6. Human-review capacity, not compute, becomes binding.
 7. Learned sizing recommends scale-up; inject a rollback signal.
+8. Reserve 70 of a 100-unit spend budget and spend 50; verify 50 remains
+   available after settlement. Separately use the only concurrency permit;
+   verify it returns after confirmed completion, but not while an orphan is live.
+9. Finish a child before a provider rate window resets; verify consumed requests
+   remain charged until the declared refill rule allows them again.
 
 Report admitted, queued, refused, cancelled, partial, migrated, and completed
 attempts with their binding constraints. Throughput without the denominator of

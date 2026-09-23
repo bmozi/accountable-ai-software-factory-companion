@@ -103,7 +103,9 @@ is a subset of the parent grant. Record the binding constraint and preserve one
 integration owner.
 
 **Proof obligations:** no child can broaden tools, data, environment, or spend;
-cancelled work releases only unused reservation; tenant fairness and reviewer
+cancelled work retains actual spend, releases unused budget, and returns
+reusable permits only after reconciliation confirms the work has ended; rate
+allowances follow their refill windows; tenant fairness and reviewer
 capacity participate in admission.
 
 **Evidence boundary:** Merlin has bounded fan-out and resource-aware design

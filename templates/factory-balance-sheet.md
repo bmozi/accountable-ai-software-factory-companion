@@ -90,19 +90,37 @@ running through one identity plane can still represent one dependency.
 
 | Stage | Count | Total cost | Median elapsed time | Tail elapsed time |
 | --- | ---: | ---: | ---: | ---: |
-| Requested |  |  |  |  |
-| Admitted |  |  |  |  |
+| Requested proposals |  |  |  |  |
+| Admitted Work Orders |  |  |  |  |
 | Candidate produced |  |  |  |  |
 | Evidence-complete |  |  |  |  |
 | Authorized delivery |  |  |  |  |
 | Effective and supportable |  |  |  |  |
-| Correctly refused or stopped |  |  |  |  |
+| Stopped after admission |  |  |  |  |
 | Ineffective |  |  |  |  |
 | Insufficient evidence |  |  |  |  |
 | Harmful or rolled back |  |  |  |  |
 
-Do not hide work excluded from the pilot or abandoned before a favorable
-denominator. Explain work mix and outcome windows.
+Count distinct Work Orders in one named admission cohort and report the outcome
+window. Justification yield is effective-and-supportable Work Orders divided by
+all admitted Work Orders in that cohort. Keep stopped, abandoned, harmful,
+rolled-back, and insufficient-evidence dispositions in the denominator. Group
+repeated attempts/candidates under their Work Order; report attempt load
+separately. Intake-refused proposals are a separate count, outside this yield.
+
+Example: 100 proposals, 20 intake refusals, 80 admitted Work Orders, 40 effective
+outcomes gives 50% justification yield and 40% proposal-to-outcome conversion.
+The stage rows overlap as a funnel; do not add them together as distinct work.
+
+Assign each expense once in the cost total. A review may carry both evidence
+and human-attention labels, but its cost is counted only once. If reported
+outcome value already subtracts realized harm, do not subtract that harm again.
+Keep uncertain future losses separate from incurred costs and explain their
+assumptions.
+
+Record intake-refused proposals separately with reasons. Do not hide work
+excluded from the pilot or abandoned before a favorable denominator. Explain
+work mix and outcome windows.
 
 ## Option-to-obligation register
 

@@ -2,6 +2,12 @@
 
 ## Unreleased (main; not yet tagged)
 
+- Added an optional exact copy of the standalone printed lesson and clarified
+  that the core book path no longer requires the extended repository.
+
+- Clarified resource lifetimes, admitted-Work-Order yield, and newcomer
+  prerequisites after the September 9 manuscript-only AI reader review.
+
 - Added a cross-platform external-reader usability protocol and structured
   observation form for the runnable laboratory.
 

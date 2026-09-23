@@ -27,9 +27,11 @@ for deciding when authority has been earned.
   together, which tradeoffs matter, who has authority, how consequences change
   the required evidence, and how the organization learns without letting the
   system grade itself.
-- **A completed lesson uses both:** run a failure, connect it to the governing
-  book principle, change one boundary, and explain who must decide what happens
-  next.
+- **The core lesson stands in the book:** its worked paper case, printed
+  implementation, failure tests and transfer exercise require no companion.
+  [`book-only-lesson/`](book-only-lesson/) is an optional copy of the printed code.
+- **The extended laboratory uses both:** run an additional failure, connect it
+  to the governing book principle, and explain who must decide what happens next.
 
 > **Series:** The Accountable AI Engineering Series — Book 3
 > **Companion:** https://github.com/bmozi/accountable-ai-software-factory-companion
