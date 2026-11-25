@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore seven accountability responsibilities, follow fictional failure scenarios, and connect diagrams to the book and runnable teaching laboratory.">
+  <meta name="author" content="John Briggs">
+  <meta name="referrer" content="no-referrer">
+  <title>Follow the decision — Accountable AI Software Factory companion</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%274%27 fill=%27%23153f46%27/%3E%3Ctext x=%2716%27 y=%2723%27 text-anchor=%27middle%27 font-size=%2723%27 fill=%27white%27 font-family=%27Georgia%27%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="guide.css">
+  <script src="guide.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the learning guide</a>
+  <header class="site-header">
+    <a class="identity" href="../../README.md">The Accountable AI Software Factory<span>Companion laboratory</span></a>
+    <nav aria-label="Guide navigation"><a href="#journey">Follow the decision</a><a href="#scenarios">Inspect a failure</a><a href="#practice">Try the laboratory</a></nav>
+    <button class="quiet" id="print-guide" type="button">Print guide</button>
+  </header>
+  <main id="main">
+    <section class="introduction" aria-labelledby="guide-title">
+      <div>
+        <p class="edition">An interactive reading companion</p>
+        <h1 id="guide-title">Follow the decision.<br>Inspect the evidence.</h1>
+        <p class="lead">A fast result becomes useful work when someone can explain what was intended, why an action was allowed, what was checked and what happened afterward.</p>
+        <p>Use this guide to find the book chapter, exercise and evidence behind each responsibility. For a platform team, that could mean reviewing a small software change without losing its permission history or mistaking a passing test for customer benefit.</p>
+        <a class="primary" href="#journey">Explore the seven responsibilities</a>
+      </div>
+      <aside class="case-note" aria-label="Fictional learning case">
+        <div class="case-heading"><span class="case-mark" aria-hidden="true">M</span><h2>Your inspection case</h2></div>
+        <p><strong>Meridian Ledger</strong> is a fictional organization used for the companion exercises.</p>
+        <p>A bounded software change waits for review. Its source guidance changes, permission is withdrawn, and a required check is missing. What may happen next?</p>
+        <div class="case-boundary"><strong>What this page does</strong><span>Explains decisions using fixed illustrative records. It performs no software change, policy evaluation or permission grant.</span></div>
+        <p class="small">The separate Python laboratory executes selected teaching checks. Neither experience certifies a production system.</p>
+      </aside>
+    </section>
+
+    <section id="journey" class="journey-section" aria-labelledby="journey-title">
+      <div class="section-heading"><div><p class="section-context">The decision chain</p><h2 id="journey-title">Seven responsibilities, one accountable arc</h2></div><p>Choose a responsibility. Follow its question into the paired chapter and an inspectable exercise.</p></div>
+      <div class="governance-rail"><strong>Governance crosses the whole chain</strong><span>Identity, tenant, scope, policy, budget, exceptions and accountable human judgment apply throughout.</span></div>
+      <nav class="boundary-nav" aria-label="Choose an accountability responsibility">
+        <button type="button" data-boundary="intent" aria-controls="boundary-intent"><span>1</span>Intent</button>
+        <button type="button" data-boundary="context" aria-controls="boundary-context"><span>2</span>Context</button>
+        <button type="button" data-boundary="authority" aria-controls="boundary-authority"><span>3</span>Authority</button>
+        <button type="button" data-boundary="execution" aria-controls="boundary-execution"><span>4</span>Execution</button>
+        <button type="button" data-boundary="verification" aria-controls="boundary-verification"><span>5</span>Verification</button>
+        <button type="button" data-boundary="outcomes" aria-controls="boundary-outcomes"><span>6</span>Outcomes</button>
+        <button type="button" data-boundary="learning" aria-controls="boundary-learning"><span>7</span>Validated learning</button>
+      </nav>
+      <p class="chain-note">These are responsibilities and evidence relationships, not seven required agents, workflow stages or deployable services. One owner integrates the work; governance is never a permission checkpoint that can be left behind.</p>
+      <div class="boundary-panels">
+        <article id="boundary-intent" class="boundary-panel" aria-labelledby="intent-title">
+          <div class="question"><span>Intent</span><h3 id="intent-title">What promise did we admit?</h3><p>Make the desired result, exclusions, accountable owner and acceptance criteria durable before execution starts.</p><div class="mini-diagram" aria-label="Request becomes an admitted Work Order"><span>Request</span><i aria-hidden="true">→</i><span>Eligibility decision</span><i aria-hidden="true">→</i><span>Work Order</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapters 3–5: the factory contract, intent and the decision chain.</p><h4>Try an exercise</h4><a href="../../templates/work-order-template.md">Define one bounded Work Order</a><h4>Expected evidence</h4><p>A second reviewer can identify the admitted promise, criteria, prohibitions, owner and revision without recovering a conversation.</p></div>
+        </article>
+        <article id="boundary-context" class="boundary-panel" aria-labelledby="context-title">
+          <div class="question"><span>Context</span><h3 id="context-title">Which guidance applies now?</h3><p>Keep source identity, version, applicability and derived advice visible. A relevant search result still needs a current-use decision.</p><div class="mini-diagram" aria-label="Versioned source supports scoped advice that is checked before use"><span>Source version</span><i aria-hidden="true">→</i><span>Scoped advice</span><i aria-hidden="true">→</i><span>Current-use check</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapter 6: memory must earn its influence.</p><h4>Try an exercise</h4><a href="../../reference-factory/06-context-authority-and-learning.md">Correct a source and inspect stale advice</a><h4>Expected evidence</h4><p>Advice based on a superseded recorded source is blocked. A refreshed, applicable view can be evaluated again. Unknown dependencies remain unknown.</p></div>
+        </article>
+        <article id="boundary-authority" class="boundary-panel" aria-labelledby="authority-title">
+          <div class="question"><span>Authority</span><h3 id="authority-title">Who may perform this exact effect?</h3><p>Permission comes from an accountable authority outside generated content. Waiting, retrying or improving a plan cannot expand it.</p><div class="mini-diagram" aria-label="Identity and scoped permission are checked for a particular action"><span>Identity + scope</span><i aria-hidden="true">→</i><span>Current permission</span><i aria-hidden="true">→</i><span>Bounded action</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapters 7, 11 and 13: bounded execution, control and human judgment.</p><h4>Try an exercise</h4><a href="../../reference-factory/06-context-authority-and-learning.md">Withdraw permission while work waits</a><h4>Expected evidence</h4><p>The withdrawn permission stops the effect. A later allowed action has its own valid scope and evidence; old approval cannot authorize new work.</p></div>
+        </article>
+        <article id="boundary-execution" class="boundary-panel" aria-labelledby="execution-title">
+          <div class="question"><span>Execution</span><h3 id="execution-title">What actually ran, and who owns recovery?</h3><p>Keep one integrating owner, bounded attempts and attributable effects. A missing response leaves uncertainty that must be reconciled.</p><div class="mini-diagram" aria-label="An owner supervises an attempt and records an effect or uncertain outcome"><span>Owner + attempt</span><i aria-hidden="true">→</i><span>Permitted effect</span><i aria-hidden="true">→</i><span>Known or uncertain result</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapters 8, 9 and 12: delegation, deterministic machinery and recovery.</p><h4>Try an exercise</h4><a href="../../reference-factory/03-recovery-and-reconciliation.md">Reconcile a lost effect response</a><h4>Expected evidence</h4><p>A stable operation identity, observed result and next authorized recovery decision. Retrying does not silently duplicate an external effect.</p></div>
+        </article>
+        <article id="boundary-verification" class="boundary-panel" aria-labelledby="verification-title">
+          <div class="question"><span>Verification</span><h3 id="verification-title">What proves this candidate meets the criteria?</h3><p>Bind verdicts to the exact candidate and qualified evaluator. Missing evidence must affect the decision.</p><div class="mini-diagram" aria-label="Candidate-bound checks inform an authorized disposition"><span>Candidate digest</span><i aria-hidden="true">→</i><span>Required checks</span><i aria-hidden="true">→</i><span>Disposition</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapters 9–11: machinery, evidence and control.</p><h4>Try an exercise</h4><a href="../../reference-factory/06-context-authority-and-learning.md">Withhold a required check</a><h4>Expected evidence</h4><p>Verification stays incomplete. In the canonical teaching factory, missing required evidence prevents disposition and receipt creation; a checkpoint trace is not a delivery receipt.</p></div>
+        </article>
+        <article id="boundary-outcomes" class="boundary-panel" aria-labelledby="outcomes-title">
+          <div class="question"><span>Outcomes</span><h3 id="outcomes-title">Did the accepted work help?</h3><p>Acceptance, release and observed benefit answer different questions. Keep an outcome owner, observation window and countermetrics.</p><div class="mini-diagram" aria-label="A release leads to observation and an outcome decision"><span>Accepted release</span><i aria-hidden="true">→</i><span>Observed effect</span><i aria-hidden="true">→</i><span>Continue, narrow or stop</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapters 14, 15 and 17: internal product, outcomes and ownership economics.</p><h4>Try an exercise</h4><a href="../../templates/factory-outcome-scorecard.md">Define the outcome and its countermetric</a><h4>Expected evidence</h4><p>A time-bounded observation with missing data and adverse effects visible. Code volume, a green test or a deployment cannot supply unmeasured ROI.</p></div>
+        </article>
+        <article id="boundary-learning" class="boundary-panel" aria-labelledby="learning-title">
+          <div class="question"><span>Validated learning</span><h3 id="learning-title">What has earned influence on later work?</h3><p>Preserve observations and hypotheses, then evaluate a scoped candidate lesson before separately admitting its reuse.</p><div class="mini-diagram" aria-label="Observation supports a candidate lesson, then separate validation and admission"><span>Observation</span><i aria-hidden="true">→</i><span>Candidate lesson</span><i aria-hidden="true">→</i><span>Validation + admission</span></div></div>
+          <div class="reading"><h4>Read in the book</h4><p>Chapters 6 and 16: memory and governed improvement.</p><h4>Try an exercise</h4><a href="../../reference-factory/06-context-authority-and-learning.md">Test a lesson before it influences another run</a><h4>Expected evidence</h4><p>An unadmitted candidate has no influence. An authorized learning owner admits a supported version; a later source correction can retire its recorded dependent lesson.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="scenarios" class="scenario-section" aria-labelledby="scenario-title">
+      <div class="section-heading"><div><p class="section-context">A failure you can explain</p><h2 id="scenario-title">Change one fact. Reconsider the decision.</h2></div><p>Fixed fictional examples illustrate the boundary. They do not execute the laboratory or evaluate real policy.</p></div>
+      <div class="scenario-workbench">
+        <div class="scenario-controls" role="group" aria-label="Choose a conceptual failure scenario">
+          <button type="button" data-scenario="corrected" aria-pressed="true">The source was corrected<span>Recorded guidance is now stale</span></button>
+          <button type="button" data-scenario="revoked" aria-pressed="false">Permission was withdrawn<span>Earlier approval still exists</span></button>
+          <button type="button" data-scenario="missing" aria-pressed="false">A required check is missing<span>One passing check remains</span></button>
+          <button type="button" data-scenario="learning" aria-pressed="false">A lesson is only a candidate<span>The earlier run looked useful</span></button>
+        </div>
+        <article class="decision-sheet" aria-labelledby="decision-title" aria-live="polite" aria-atomic="true">
+          <p class="sheet-label">Conceptual decision record</p><h3 id="decision-title">Stale advice must be refreshed</h3>
+          <dl><div><dt>What changed</dt><dd id="decision-change">The source moved from version 1 to version 2. The advice still names version 1.</dd></div><div><dt>Safe next action</dt><dd id="decision-action">Stop dependent use, inspect the correction and evaluate a newly derived view.</dd></div><div><dt>Evidence to retain</dt><dd id="decision-evidence">Old and current source versions, recorded derivation, the blocked-use decision and the refreshed-view decision.</dd></div></dl>
+          <p class="decision-limit" id="decision-limit">This protects recorded dependencies. It does not discover omitted ancestry or prove the source is true.</p>
+        </article>
+      </div>
+      <noscript><p>JavaScript is disabled. The first conceptual example remains readable; the complete runnable lesson covers all four cases.</p></noscript>
+    </section>
+
+    <section class="assistance-section" aria-labelledby="assistance-title">
+      <div class="section-heading"><div><p class="section-context">Explain autonomy carefully</p><h2 id="assistance-title">Describe the assistance. Specify the permission.</h2></div><p>These five proposed descriptions explain human involvement. They are not credentials, risk tiers or an automatic escalation ladder.</p></div>
+      <div class="table-wrap"><table><caption>Five descriptive assistance levels; every effect still needs current authority</caption><thead><tr><th scope="col">Level</th><th scope="col">Assistance</th><th scope="col">Boundary to explain</th></tr></thead><tbody>
+        <tr><th scope="row">0</th><td>Observe</td><td>Read permitted information. Reading still requires access.</td></tr>
+        <tr><th scope="row">1</th><td>Recommend</td><td>Propose an action without permission to perform that action.</td></tr>
+        <tr><th scope="row">2</th><td>Prepare</td><td>Create a scoped draft or patch. Writing that draft is itself an effect.</td></tr>
+        <tr><th scope="row">3</th><td>Execute with approval</td><td>Perform the precise approved action after current checks.</td></tr>
+        <tr><th scope="row">4</th><td>Execute within explicit delegation</td><td>Stay within named resources, actions, time and budget. Revocation still applies.</td></tr>
+      </tbody></table></div>
+      <p class="chain-note">An agent inventory, evaluated version or tool description can help discovery and review. None grants permission. Integrations must preserve the receiving system’s identity, effect and recovery contracts.</p>
+    </section>
+
+    <section id="practice" class="practice-section" aria-labelledby="practice-title">
+      <div><p class="section-context">Move from explanation to evidence</p><h2 id="practice-title">Run it. Change it. Explain the consequence.</h2><p>Read the paired chapter, run the extended teaching journey, then change a source version or permission in a test. Explain who may decide what happens next.</p><pre><code>PYTHONPATH=. python3 reference-factory/example/run_context_authority_journey.py</code></pre><p class="small">Run from the repository root with Python 3.10 or newer. No model provider, API key, cloud account or browser connection is required.</p></div>
+      <div class="practice-links"><a href="../../reference-factory/06-context-authority-and-learning.md"><strong>Read the extended laboratory</strong><span>Mechanisms, failure cases, legitimate controls and limits</span></a><a href="../../BOOK-TO-COMPANION-MAP.md"><strong>Find the paired book chapter</strong><span>Use the book for judgment and the laboratory for bounded proof</span></a><a href="../accountable-factory-visual-guide.md"><strong>Use the editable architecture diagrams</strong><span>Five vendor-neutral workshop views</span></a><a href="../../templates/memory-governance-workbook.md"><strong>Adapt the memory-governance workbook</strong><span>Ownership, applicability, validation and correction obligations</span></a></div>
+    </section>
+    <section class="limits-section" aria-labelledby="limits-title"><h2 id="limits-title">What this experience establishes</h2><p>This is a public, vendor-neutral teaching guide for selected accountability responsibilities. The browser examples are fixed illustrations. The Python extension is a separate small teaching mechanism; its tests do not establish production authorization, enterprise connector coverage, distributed concurrency, regulatory compliance or business benefit.</p><p>Choose a factory pattern only when the work and consequence justify it. Keep one integrating owner, independent evidence and a supported way to stop or recover. A reusable factory-line description can organize these responsibilities without becoming a new permission authority or an arbitrary workflow engine.</p></section>
+  </main>
+  <footer><div><strong>John Briggs</strong><span>The Accountable AI Software Factory companion</span></div><p>Learning guide version 1.0, updated 25 November 2026.<br>Written and presentation content: <a href="../../LICENSE-CONTENT">CC BY-NC-SA 4.0</a>. JavaScript and teaching Python code use the <a href="../../LICENSE-CODE">MIT code license</a>.</p><p><a href="../../ERRATA.md">Corrections and errata</a><br><a href="https://github.com/bmozi/accountable-ai-software-factory-companion">Canonical companion repository</a></p></footer>
+</body>
+</html>

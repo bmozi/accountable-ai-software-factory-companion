@@ -70,11 +70,21 @@ obligations.
 
 **Proof obligations:** child attempts remain attributable; evidence names the
 candidate digest; the release actor and exposure are explicit; the record
-survives restart.
+survives restart. Missing checks must remain visible without inventing a verdict.
+The companion's canonical factory withholds disposition and a release receipt
+when required evidence is missing; a diagnostic trace is not a substitute.
 
 **Evidence boundary:** Merlin has contract and conformance tests for selected
 receipt relationships. Completeness for a regulated domain still requires
 local legal, risk, and records review.
+
+### Inspect missing evidence
+
+The [connected lesson](../reference-factory/06-context-authority-and-learning.md)
+uses the public teaching core's rule: a missing required check prevents the
+release decision and receipt. A diagnostic trace can explain that stop; it is
+not a released-work receipt or evidence of deployment. Other designs may record
+incomplete attempts, but must never present them as verified release evidence.
 
 ## Card 5 — Bound retry and repair separately
 
@@ -123,11 +133,25 @@ contradiction, decay, and retrieval eligibility.
 
 **Proof obligations:** similarity cannot grant authority; expired or
 out-of-scope learning cannot change behavior; contradictions remain visible;
-promotion requires a separate authorized decision.
+promotion requires a separate authorized decision. Record exact source versions
+and material dependencies. A correction invalidates recorded dependent advice;
+unknown dependencies remain an investigation obligation. Current read permission,
+source freshness and permission to perform an effect are separate checks.
 
 **Evidence boundary:** Merlin has provenance-aware memory and learning-state
 foundations. The effectiveness and bias of long-lived organizational memory
 remain open empirical questions.
+
+### Exercise the source boundary
+
+Use the [connected context-and-authority lesson](../reference-factory/06-context-authority-and-learning.md)
+to distinguish a current source from a stale derived note. Record which source
+version informed the note and which dependencies are actually known. A source
+correction cannot invalidate dependencies that were never recorded, and a
+fresh source cannot grant permission to perform an action.
+
+This is a public teaching extension. It does not assert that every private
+implementation path enforces current-source or permission checks uniformly.
 
 ## Card 8 — Improvement cannot change its own judge
 
@@ -140,11 +164,22 @@ own authority.
 
 **Proof obligations:** baseline and countermetric are declared before results;
 proposal and evaluator are separable; rollback and expiry are mandatory;
-negative and inconclusive results survive.
+negative and inconclusive results survive. An observation does not become a
+validated lesson merely because a test passed or a model repeated it. Separate
+admission names scope, evidence and an accountable decision maker.
 
 **Evidence boundary:** Merlin has proposed, tested, and rejected improvement
 paths that support the protected-boundary pattern. Long-term transferred
 outcome benefit is not yet established.
+
+### Keep observation and admission separate
+
+In the [connected lesson](../reference-factory/06-context-authority-and-learning.md),
+a fictional outcome observation is linked to a candidate lesson. A separately
+authorized learning owner admits its scoped influence as a scripted decision;
+the exercise does not establish that the lesson is true or transfers elsewhere.
+Repetition, retrieval rank and passing local tests cannot turn a candidate into
+universal organizational policy.
 
 ## Card 9 — Operator visibility is a control surface
 

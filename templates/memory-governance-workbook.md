@@ -16,6 +16,28 @@ factory may retrieve or use to change future behavior.
 | Validated practice | Reinforced guidance |  |  |  | Yes, within scope |
 | Retired learning | Superseded guidance |  |  |  | No |
 
+## Source and current-use record
+
+**Source identifier and version:**<br>
+**Source owner and applicable scope:**<br>
+**Derived guidance and recorded material dependencies:**<br>
+**How current version is obtained; unavailable-source behavior:**<br>
+**Who may read the source now:**<br>
+**Who may rely on this guidance for this purpose now:**<br>
+**Separately permitted action, resource, environment and validity:**<br>
+**What changes after correction, retraction or revoked permission:**<br>
+**Who reviews omitted or newly discovered dependencies:**
+
+Keep source ownership, knowledge admission and execution permission separate.
+A correct policy document can inform a decision without authorizing its reader
+to perform the action. Correction reaches only the recorded dependency closure;
+unknown dependencies remain an investigation obligation.
+
+Practice with the fictional
+[context-and-authority lesson](../reference-factory/06-context-authority-and-learning.md).
+The [interactive guide](../diagrams/interactive-guide/index.html) helps identify
+which chapter, exercise and evidence corresponds to each responsibility.
+
 ## Learning record
 
 **Identifier:**<br>

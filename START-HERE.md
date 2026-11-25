@@ -115,6 +115,16 @@ Complete the first sections of
 
 If any one is missing, do not connect the workflow to production.
 
+## Optional extension: when guidance or permission changes
+
+After the original journey, open the
+[interactive architecture guide](diagrams/interactive-guide/index.html) and run
+[the connected lesson](reference-factory/06-context-authority-and-learning.md).
+Trace a corrected source, revoked authority, withheld receipt and separately
+admitted learning. These are different responsibilities; changing one must not
+silently authorize another. The extension is offline, uses fictional data and
+leaves the printed book-only lesson unchanged.
+
 ## Next paths
 
 - **Laboratory implementation path:** follow

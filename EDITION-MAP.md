@@ -2,7 +2,7 @@
 
 | Companion version | Book relationship | Status |
 |---|---|---|
-| 1.2.1 | Main-branch companion; updates accountability traceability and final-decision scaffolding | Unreleased |
+| 1.2.1 | Unreleased companion updates: accountability traceability, final-decision scaffolding and connected context/authority learning | Unreleased |
 | 1.2.0 | Published first-edition companion; synchronizes Chapter 17's fit-before-ownership tools and repairs the versioned ZIP for direct unpack-and-run use | Current tagged release |
 | 1.1.1 | Published first-edition companion; adds the book-and-laboratory contract, series progression, and a governed-loop-to-factory graduation path | Superseded |
 | 1.1.0 | Published first-edition companion; unifies the executable contract, proves all 24 obligations, and adds a complete effect-to-outcome journey, policy, CLI, integration, container, and measurement harness | Superseded |

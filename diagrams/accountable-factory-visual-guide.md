@@ -1,6 +1,12 @@
 # Accountable Factory Visual Guide
 
-These diagrams are conceptual, vendor-neutral teaching views. They do not
+These diagrams are conceptual, vendor-neutral teaching views.
+
+For an offline question-to-evidence exploration, open the
+[interactive architecture guide](interactive-guide/index.html). Pair it with
+[the connected context-and-authority lesson](../reference-factory/06-context-authority-and-learning.md).
+The interactive guide supplements the five diagrams below; neither interface
+issues authority or demonstrates production operation. These views do not
 describe Merlin's production topology. GitHub renders the Mermaid sources;
 copy them into any Mermaid-compatible editor for workshops.
 

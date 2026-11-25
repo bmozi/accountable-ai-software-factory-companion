@@ -89,3 +89,23 @@ Use three chapters per meeting from the
 [`individual chapter guides`](../study-guides/chapters/README.md). Require each learner
 to bring one artifact, one failure example, and one decision they would reverse
 under different evidence. End with a cross-role review of the complete trace.
+
+## Optional cross-role session: context to accountable learning
+
+Use this after the canonical reader journey. An architect, builder, reviewer
+and outcome owner may share roles, but must name each decision explicitly.
+
+1. Explore the [interactive guide](../diagrams/interactive-guide/index.html).
+   Each participant names one question they need answered before trusting work.
+2. Run the [context-and-authority lesson](../reference-factory/06-context-authority-and-learning.md).
+   Identify the separate stops caused by changed guidance, revoked permission
+   and missing evidence. Do not fix a stop by weakening its requirement.
+3. Complete the [memory workbook](../templates/memory-governance-workbook.md)
+   for the fictional source and its proposed lesson. Record who may correct the
+   source and who may admit learning; neither role automatically permits release.
+4. Use the [chapter integration map](../decisions/context-authority-integration-map.md)
+   to explain the governing principle and the remaining operational decision.
+
+Leave with the recorded trace, one revised contract and a named next owner.
+Running the example alone does not demonstrate reader understanding or a
+legitimate production policy.

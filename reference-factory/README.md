@@ -36,6 +36,19 @@ complete operating model from function names. Use the
 [`BOOK-TO-COMPANION-MAP.md`](../BOOK-TO-COMPANION-MAP.md) curriculum before
 altering a responsibility or widening authority.
 
+## Optional context-and-authority extension
+
+Once the canonical journey is understood, use
+[06 — Context, authority and accountable learning](06-context-authority-and-learning.md).
+It adds an explicit miniature source-version model around the same teaching
+factory. Read permission, source freshness, execution authority, verification
+and learning admission remain separate. A required missing check withholds the
+release decision and receipt; the extension does not manufacture a substitute.
+
+Explore the same responsibilities in the
+[interactive guide](../diagrams/interactive-guide/index.html).
+The original twenty-four obligations and default reader journey remain intact.
+
 ## What you will build
 
 By the end, the implementation can:

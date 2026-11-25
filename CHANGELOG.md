@@ -2,6 +2,17 @@
 
 ## Unreleased (main; not yet tagged)
 
+- Fixed reader-bundle inclusion of the already-public printed lesson so documented
+  book-only paths remain valid after unpacking.
+
+- Added an offline interactive architecture learning guide connecting reader
+  questions, responsibility boundaries, chapters, exercises and evidence.
+- Added a connected context-and-authority teaching extension: corrected source
+  versions, revoked authority, missing-check refusal and separately admitted learning.
+- Extended chapter mappings, reader routes, sanitized pattern exercises and the
+  memory-governance workbook while preserving the original twenty-four obligations,
+  published artifact paths and dependency-free canonical teaching factory.
+
 - Added an optional exact copy of the standalone printed lesson and clarified
   that the core book path no longer requires the extended repository.
 

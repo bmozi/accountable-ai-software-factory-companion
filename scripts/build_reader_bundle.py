@@ -42,6 +42,7 @@ DIRECTORIES = (
     "accountable_factory",
     "assessment",
     "benchmarks",
+    "book-only-lesson",
     "companion",
     "decisions",
     "diagrams",

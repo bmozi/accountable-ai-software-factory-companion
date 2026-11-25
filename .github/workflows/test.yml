@@ -38,6 +38,10 @@ jobs:
         run: python reference-factory/example/run_reader_journey.py
         env:
           PYTHONPATH: .
+      - name: Run optional context and authority journey
+        run: python reference-factory/example/run_context_authority_journey.py
+        env:
+          PYTHONPATH: .
       - name: Validate example accountability artifacts
         shell: bash
         run: |
@@ -70,4 +74,5 @@ jobs:
           test -x "$reader_root/reference-factory/run-reader-journey.sh"
           cd "$reader_root"
           ./reference-factory/run-reader-journey.sh
+          PYTHONPATH=. python reference-factory/example/run_context_authority_journey.py
           python scripts/validate_repository.py

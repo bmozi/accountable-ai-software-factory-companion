@@ -24,6 +24,17 @@ the operating guide; these materials help you apply and test its decisions.
 | Govern enterprise agent roles | [`leadership/enterprise-agent-role-and-decision-rights-map.md`](leadership/enterprise-agent-role-and-decision-rights-map.md) | Explicit machine contributions and human decision rights |
 | Expand workforce capability safely | [`workforce/ai-practice-and-guardrail-guide.md`](workforce/ai-practice-and-guardrail-guide.md) | A work-class-specific practice level, guardrail card, and authority decision |
 
+## Connected context-and-authority route
+
+- **Explore visually:** [interactive architecture guide](diagrams/interactive-guide/index.html).
+  Choose a responsibility or a changed-source/permission scenario, then inspect
+  its chapter, exercise and evidence boundary.
+- **Run the extension:** [context, authority and learning lesson](reference-factory/06-context-authority-and-learning.md).
+  Explain why a source correction, permission revocation and missing check each
+  stop a different part of the work. Name the next authorized decision maker.
+- **Map it to the curriculum:** [integration map](decisions/context-authority-integration-map.md).
+  This is an optional extension of the published laboratory, not a new book edition.
+
 ## Executable laboratory
 
 - [`reference-factory/README.md`](reference-factory/README.md): contracts,
