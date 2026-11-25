@@ -101,6 +101,20 @@ who do not use Git can download the versioned bundle from the
 Human usability evidence is tracked separately from CI in the
 [`External Reader Usability Pass`](READER-USABILITY-PASS.md).
 
+## Explore context, authority and learning together
+
+Open the [interactive architecture guide](diagrams/interactive-guide/index.html)
+in your browser, then follow the optional
+[context-and-authority lesson](reference-factory/06-context-authority-and-learning.md).
+The guide connects a reader question to a responsibility, book chapter, exercise
+and expected evidence. It works offline and needs no account or model provider.
+
+The runnable extension uses the existing teaching factory plus a small explicit
+source-version model. It demonstrates corrected guidance, revoked authority,
+incomplete verification and separately admitted learning. It does not import
+Merlin, add a production context platform or change the twenty-four published
+acceptance obligations. Start with the original journey above before extending it.
+
 ## What is here
 
 | Path | Reader value |
@@ -117,7 +131,7 @@ Human usability evidence is tracked separately from CI in the
 | [`examples/`](examples/) | Complete Meridian Ledger decision trace and valid or deliberately invalid records. |
 | [`exercises/`](exercises/) | Twelve failure-injection drills with explicit safe-pass conditions. |
 | [`study-guides/`](study-guides/) and [`learning-paths/`](learning-paths/) | Applied workbook, eighteen deeper chapter guides, and role-specific or ninety-day routes. |
-| [`diagrams/`](diagrams/) | Five editable Mermaid architecture and recovery views for workshops. |
+| [`diagrams/`](diagrams/) | Five editable Mermaid workshop views plus an offline interactive question-to-evidence learning guide. |
 | [`merlin/`](merlin/) | Nine sanitized first-party Merlin pattern cards with evidence limits and proof obligations. |
 | [`assessment/`](assessment/) and [`decisions/`](decisions/) | Thirty-question responsibility diagnostic and ten reversible architecture-decision starters. |
 | [`leadership/`](leadership/) and [`workforce/`](workforce/) | Requirements-gated build-versus-buy, enterprise decision-rights, AI practice, formation, and guardrail instruments. |
@@ -169,7 +183,7 @@ has organizational consequence:
 
 Executable Python and shell code under `accountable_factory/`, `benchmarks/`,
 `reference-factory/example/`, `reference-factory/run-reader-journey.sh`,
-`scripts/`, and `tools/` is MIT licensed.
+`scripts/`, `tools/`, and `diagrams/interactive-guide/guide.js` is MIT licensed.
 Written content, templates, schemas, contracts, exercises, and explanatory
 material are CC BY-NC-SA 4.0.
 See [`LICENSE`](LICENSE), [`LICENSE-CODE`](LICENSE-CODE), and

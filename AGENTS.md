@@ -16,3 +16,18 @@ retailer upload, human reader validation, or physical proof quality. Preserve th
 mandatory exact-final-file visual review gate before promotion/readiness claims.
 The shared toolkit's `BOOK-REPOSITORY-HANDOFF.md` and
 `book_production/audit_repository.py` describe the repeatable audit.
+
+## Connected architecture learning path
+
+For context, authority, evidence and learning updates, start with
+`decisions/context-authority-integration-map.md` and
+`release-assets/context-authority-integration-review.md`. Keep one canonical
+teaching factory; the optional source-version model is an explicit in-memory
+exercise, not a production context service. Preserve the printed paths,
+A01–A24 obligations and existing code/content license boundary.
+
+Validate both reader journeys, discovered tests, local HTML assets and the
+unpacked bundle. Review the guide on small screens, keyboard, offline/no-script
+and print paths. Keep browser logs, databases, screenshots and generated PDFs
+outside bundled content. Distinguish conceptual scenarios, executable local
+checks, reader understanding and production assurance in every claim.

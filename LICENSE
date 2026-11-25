@@ -33,6 +33,7 @@ This repository contains two distinct kinds of work, licensed differently.
      scripts/*.py
      tools/*.py
      integrations/**/*.yml when copied as executable workflow configuration
+     diagrams/interactive-guide/guide.js
      Executable source files that explicitly carry the MIT license.
 
    Summary:
